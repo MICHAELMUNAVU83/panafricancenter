@@ -33,7 +33,7 @@ export default function MySwiper() {
 
   return (
     <section>
-      <div className="py-20 relative">
+      <div className="md:py-12 py-4 relative">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={50}
@@ -41,14 +41,18 @@ export default function MySwiper() {
           navigation
           pagination={{ clickable: true }}
           loop={true}
-          className="bg-[url('../public/assets/slider-background.svg')] bg-cover items-center bg-center h-[400px] px-20"
+          className="bg-[url('/assets/slider-background.svg')] bg-cover items-center bg-center h-[400px] px-20"
         >
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center h-full text-center">
                 <div className="text-white">
-                  <h2 className="text-3xl font-bold mb-4">{slide.title}</h2>
-                  <p className="text-lg">{slide.content}</p>
+                  <h2 className="text-3xl  libre-baskerville-bold font-bold mb-4">
+                    {slide.title}
+                  </h2>
+                  <p className="md:text-lg md:w-[100%] w-[70%] text-sm m-auto josefin-sans-regular">
+                    {slide.content}
+                  </p>
                 </div>
               </div>
             </SwiperSlide>

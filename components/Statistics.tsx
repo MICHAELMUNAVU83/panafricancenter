@@ -4,7 +4,7 @@ import { DATA } from "@/data/Data";
 function Statistics() {
   return (
     <section>
-      <div className="max-w-6xl px-5 lg:mx-auto py-20">
+      <div className="max-w-6xl px-5 lg:mx-auto py-8 md:py-20">
         <div>
           <div className="flex items-center space-x-2">
             <h5 className="text-lg text-[#252A34] font-semibold">
