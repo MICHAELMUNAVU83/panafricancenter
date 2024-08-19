@@ -5,7 +5,7 @@ import "./globals.css";
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Center for Pan Africam Affairs",
+  title: "Center for Pan African Affairs",
   description:
     "A peaceful, united, and integrated Africa and its global diaspora",
 };
