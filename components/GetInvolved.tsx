@@ -16,7 +16,7 @@ function GetInvolved() {
           </h1>
         </div>
 
-        <div className="m-auto w-[90%]  md:w-[80%] grid gap-12 grid-cols-1 md:grid-cols-3">
+        <div className="m-auto w-[90%]  md:w-[80%] grid gap-12 grid-cols-1  just md:grid-cols-3">
           {DATA.getInvolved.map((item, index) => {
             let tileProps = {};
 
