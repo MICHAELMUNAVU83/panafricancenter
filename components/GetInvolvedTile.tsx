@@ -21,7 +21,7 @@ const GetInvolvedTile = ({
   buttonStyle,
   textColor,
 }: GetInvolvedTileProps) => {
-  const tileClasses = `relative rounded-[30px]  p-6 flex flex-col items-center m-auto w-[100%] m-4 ${bgColor}`;
+  const tileClasses = `relative rounded-[30px] h-[400px]   p-6 flex flex-col items-center m-auto w-[100%] m-4 ${bgColor}`;
 
   const buttonClasses = `mt-4 py-2 px-4 rounded-[30px] ${buttonStyle}`;
 

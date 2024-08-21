@@ -2,13 +2,6 @@
 export const DATA = {
   getInvolved: [
     {
-      title: "Become a volunteer",
-      description: `As a volunteer, you'll play a vital role in creating positive change in our community. 
-                    Whether it's helping with events, supporting our programs, or lending a hand where it's needed most, 
-                    your time and skills can transform lives. Together, we can make a real impact—one step at a time.`,
-      icon: "/assets/become-volunteer.svg",
-    },
-    {
       title: "Donate to support",
       description: `Your donation will play a vital role in creating positive change in our community. 
                     Whether it’s funding essential programs, supporting those in need, or driving new initiatives, 
@@ -21,6 +14,19 @@ export const DATA = {
                     Whether it’s through shared resources, strategic collaborations, or innovative initiatives, 
                     your partnership can amplify our impact. Together, we can achieve more—one partnership at a time.`,
       icon: "/assets/become-member.svg",
+    },
+  ],
+
+  upcoming_events: [
+    {
+      title: "A day with our wonderful children",
+      day: "13",
+      month: "Oct",
+    },
+    {
+      title: "Seminar: Caring for children with autism",
+      day: "25",
+      month: "Sep",
     },
   ],
 

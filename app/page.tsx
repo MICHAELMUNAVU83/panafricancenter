@@ -6,24 +6,24 @@ import Image from "next/image";
 import NavbarTop from "@/components/NavbarTop";
 import Navbar from "@/components/Navbar";
 import Vision from "@/components/Vision";
-import Events from "@/components/Events";
-import Gallery from "@/components/Gallery";
+import Posts from "@/components/Posts";
 import Footer from "@/components/Footer";
+import UpcomingEvents from "@/components/UpcomingEvents";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
     <main>
-      <NavbarTop />
       <Navbar />
       <HomeDesc />
       <About />
-
-      <GetInvolved />
-
-      <Statistics />
       <Vision />
-      <Events />
-      <Gallery />
+      <GetInvolved />
+      <Statistics />
+      <Posts />
+      <UpcomingEvents />
+      <Contact />
+
       <Footer />
     </main>
   );

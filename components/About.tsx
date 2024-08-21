@@ -3,8 +3,12 @@ import React from "react";
 function About() {
   return (
     <section id="about">
-      <div className="bg-[#006600] about-text__color w-full">
-        <div className="flex-col josefin-sans-regular text-[22px] justify-center space-y-10 py-10 px-5 text-sm lg:text-lg lg:mx-40 ">
+      <div className="bg-[#219D80] py-8 about-text__color w-full">
+        <div className="flex justify-center py-6">
+          <p className="bg-[#A90100] h-[2px] w-[100px]" />
+        </div>
+
+        <div className="flex-col josefin-sans-regular text-[22px] justify-center space-y-10  px-5 text-sm lg:text-lg lg:mx-40 ">
           <h1 className="text-center text-[48px] libre-baskerville-regular">
             About Us
           </h1>

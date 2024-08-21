@@ -21,7 +21,7 @@ function Statistics() {
           {DATA.statistics.map((stat, index) => (
             <div
               key={index}
-              className="bg-[#219D8014] text-center space-y-3 py-6 px-10   justify-center flex flex-col"
+              className="bg-[#FDA538]/30 text-center space-y-3 py-6 px-10   justify-center flex flex-col"
             >
               <img
                 src={stat.icon}

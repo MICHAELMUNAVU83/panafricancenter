@@ -33,7 +33,7 @@ export default function MySwiper() {
 
   return (
     <section>
-      <div className="md:py-12 py-4 relative">
+      <div className="relative">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={50}
