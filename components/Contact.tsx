@@ -9,7 +9,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 function Contact() {
   return (
-    <section id="about">
+    <section id="contact">
       <div className="w-[100%]  justify-center items-center flex flex-col gap-2">
         <p className="text-[39px] libre-baskerville-bold text-[#1D2130]">
           We'd love to hear from you
@@ -19,8 +19,8 @@ function Contact() {
         </p>
       </div>
 
-      <div className="md:w-[80%] mt-5 w-[90%] shadow-sm shadow-gray-500 rounded-md h-[670px] flex justify-center p-2 m-auto mb-10 ">
-        <div className="w-[40%] h-[100%] bg-[#219D80] rounded-md  flex-col p-8 flex justify-between">
+      <div className="md:w-[80%] mt-5 w-[90%] md:flex-row flex-col  shadow-sm shadow-gray-500 rounded-md md:h-[670px] flex justify-center p-2 m-auto mb-10 ">
+        <div className="md:w-[40%] w-[100%] h-[100%] bg-[#219D80] rounded-md  flex-col p-8 flex justify-between">
           <div className="flex flex-col gap-1">
             <p className="text-white">Contact Information</p>
             <p className="text-white">Say something to start a live chat! </p>
@@ -55,14 +55,14 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div className="w-[60%] h-[100%] flex justify-center items-start bg-white p-8">
+        <div className="md:w-[60%] w-[100%] h-[100%] flex justify-center items-start bg-white p-8">
           <form
             action="https://formspree.io/f/xvgplpky"
             method="post"
             className="w-[100%] flex flex-col gap-3"
           >
-            <div className="flex  items-start justify-between  w-[100%]">
-              <div className="flex flex-col gap-1 w-[48%]">
+            <div className="flex  items-start md:flex-row flex-col gap-4 justify-between  w-[100%]">
+              <div className="flex flex-col gap-1 w-[100%] md:w-[48%]">
                 <p className="text-black  text-[19px] libre-baskerville-regular">
                   First Name
                 </p>
@@ -74,7 +74,7 @@ function Contact() {
                 />
               </div>
 
-              <div className="flex flex-col gap-1 w-[48%]">
+              <div className="flex flex-col gap-1 w-[100%] md:w-[48%]">
                 <p className="text-black  text-[19px] libre-baskerville-regular">
                   Last Name
                 </p>
@@ -86,8 +86,8 @@ function Contact() {
                 />
               </div>
             </div>
-            <div className="flex  items-start justify-between  w-[100%]">
-              <div className="flex flex-col gap-1 w-[48%]">
+            <div className="flex  items-start justify-between md:flex-row flex-col gap-4   w-[100%]">
+              <div className="flex flex-col gap-1 w-[100%] md:w-[48%]">
                 <p className="text-black  text-[19px] libre-baskerville-regular">
                   Email
                 </p>
@@ -99,7 +99,7 @@ function Contact() {
                 />
               </div>
 
-              <div className="flex flex-col gap-1 w-[48%]">
+              <div className="flex flex-col gap-1 w-[100%] md:w-[48%]">
                 <p className="text-black  text-[19px] libre-baskerville-regular">
                   Phone Number
                 </p>

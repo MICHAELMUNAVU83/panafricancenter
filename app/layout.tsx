@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/logo.svg" sizes="any" />
+        <link rel="icon" href="/assets/logo.jpg" sizes="any" />
       </head>
 
       <body className={`${dmSans.className}`}>{children}</body>

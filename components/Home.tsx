@@ -52,10 +52,10 @@ const HomeDesc = () => {
                 className="flex text-white flex-col justify-center items-center gap-4  bg-cover w-[100%] h-[100%] text-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
-                <p className="libre-baskerville-bold w-[80%] md:w-[50%] text-[56px]">
+                <p className="libre-baskerville-bold w-[80%] md:w-[50%] text-[32px] md:text-[56px]">
                   {slide.title}
                 </p>
-                <p className="josefin-sans-regular   w-[80%] md:w-[50%] text-[24px]">
+                <p className="josefin-sans-regular   w-[80%] md:w-[50%] text-[18px] md:text-[24px]">
                   {slide.content}
                 </p>
               </div>
@@ -63,16 +63,31 @@ const HomeDesc = () => {
           ))}
         </Swiper>
 
-        <div className="mt-10 flex flex-col gap-5">
+        <div className="mt-10 flex flex-col justify-center items-center  gap-5">
           <h1 className="text-[#525560] text-center libre-baskerville-regular text-[22px] ">
             Our supporters
           </h1>
-          <div className="grid grid-cols-5">
-            <img src="/assets/sup1.png" alt="supporter1" />
-            <img src="/assets/sup2.png" alt="supporter1" />
-            <img src="/assets/sup3.png" alt="supporter1" />
-            <img src="/assets/sup4.png" alt="supporter1" />
-            <img src="/assets/sup5.png" alt="supporter1" />
+          <div className="flex flex-wrap justify-between items-center w-[100%] py-2">
+            <img
+              src="/assets/sup1.png"
+              alt="supporter1"
+              className="flex justify-center items-center"
+            />
+            <img
+              src="/assets/sup2.png"
+              alt="supporter1"
+              className="flex justify-center items-center"
+            />
+            <img
+              src="/assets/sup3.png"
+              alt="supporter1"
+              className="flex justify-center items-center"
+            />
+            <img
+              src="/assets/sup4.png"
+              alt="supporter1"
+              className="flex justify-center items-center"
+            />
           </div>
         </div>
       </section>

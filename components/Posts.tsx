@@ -29,7 +29,7 @@ const Posts = () => {
     },
   ];
   return (
-    <div id="posts" className="md:w-[80%] w-[90%] m-auto mb-10 ">
+    <div id="news" className="md:w-[80%] w-[90%] m-auto mb-10 ">
       <div className="text-center gap-5 flex items-center justify-center">
         <div className="h-[2px] bg-[#060] w-12" />
         <h3 className="uppercase roboto-bold  text-[#A90100] text-[18px] ">

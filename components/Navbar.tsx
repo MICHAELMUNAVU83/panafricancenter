@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav className="sm:hidden flex justify-between items-center px-5 ">
         <div>
           <img
-            src="/assets/logo.svg"
+            src="/assets/logo.jpg"
             alt="logo"
             className="h-[40px] object-contain"
           />
@@ -46,24 +46,15 @@ const Navbar = () => {
             <Link href="#programs">Programs</Link>
           </li>
           <li>
-            <Link href="#" className="flex items-center gap-x-1">
-              Shop
-              <span>
-                <img src="/assets/drop-down.svg" alt="drop-down" />
-              </span>
-            </Link>
+            <Link href="#news">News</Link>
           </li>
           <li>
-            <Link href="#events" className="flex items-center gap-x-1">
-              Events
-              <span>
-                <img src="/assets/drop-down.svg" alt="drop-down" />
-              </span>
-            </Link>
+            <Link href="#events">Events</Link>
           </li>
           <li>
-            <Link href="#gallery">Gallery</Link>
+            <Link href="#contact">Contact Us</Link>
           </li>
+
           <li className="flex gap-x-5 mt-5">
             <Link href="#">
               <img
@@ -94,7 +85,7 @@ const Navbar = () => {
       <nav className="hidden sm:flex justify-between mx-28 py-3  items-center">
         <div>
           <img
-            src="/assets/logo.svg"
+            src="/assets/logo.jpg"
             alt="logo"
             className="h-[50px] object-contain"
           />
@@ -111,23 +102,13 @@ const Navbar = () => {
               <Link href="#programs">Programs</Link>
             </li>
             <li>
-              <Link href="#" className="flex items-center gap-x-1">
-                Shop
-                <span>
-                  <img src="/assets/drop-down.svg" alt="drop-down" />
-                </span>
-              </Link>
+              <Link href="#news">News</Link>
             </li>
             <li>
-              <Link href="#events" className="flex items-center gap-x-1">
-                Events
-                <span>
-                  <img src="/assets/drop-down.svg" alt="drop-down" />
-                </span>
-              </Link>
+              <Link href="#events">Events</Link>
             </li>
             <li>
-              <Link href="#gallery">Gallery</Link>
+              <Link href="#contact">Contact Us</Link>
             </li>
           </ul>
         </div>
