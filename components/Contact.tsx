@@ -11,12 +11,16 @@ function Contact() {
   return (
     <section id="about">
       <div className="w-[100%]  justify-center items-center flex flex-col gap-2">
-        <p>We'd love to hear from you</p>
-        <p>Any question or remarks? Just write us a message!</p>
+        <p className="text-[39px] libre-baskerville-bold text-[#1D2130]">
+          We'd love to hear from you
+        </p>
+        <p className="text-[#717171] text-[18px] roboto-regular">
+          Any question or remarks? Just write us a message!
+        </p>
       </div>
 
-      <div className="md:w-[80%] w-[90%] h-[670px] flex justify-center p-2 m-auto mb-10 ">
-        <div className="w-[40%] h-[100%] bg-[#219D80] p- flex-col p-8 flex justify-between">
+      <div className="md:w-[80%] mt-5 w-[90%] shadow-sm shadow-gray-500 rounded-md h-[670px] flex justify-center p-2 m-auto mb-10 ">
+        <div className="w-[40%] h-[100%] bg-[#219D80] rounded-md  flex-col p-8 flex justify-between">
           <div className="flex flex-col gap-1">
             <p className="text-white">Contact Information</p>
             <p className="text-white">Say something to start a live chat! </p>
@@ -25,7 +29,7 @@ function Contact() {
           <div className="flex flex-col gap-10 text-[#fff]">
             <div className="flex text-sm gap-1 items-center">
               <IoMdMail size={23} />
-              <p className="">Panafricanaffairs@gmail.com</p>
+              <p className="">info@panafricancenter.africa</p>
             </div>
             <div className="flex gap-1 text-sm items-center">
               <FaLocationDot size={23} />
@@ -53,7 +57,7 @@ function Contact() {
         </div>
         <div className="w-[60%] h-[100%] flex justify-center items-start bg-white p-8">
           <form
-            action="https://formspree.io/f/xwkgrjdq"
+            action="https://formspree.io/f/xvgplpky"
             method="post"
             className="w-[100%] flex flex-col gap-3"
           >
@@ -64,19 +68,21 @@ function Contact() {
                 </p>
                 <input
                   className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
-                  placeholder="Enter your name"
+                  placeholder="Enter your first name"
                   name="Name"
+                  required
                 />
               </div>
 
               <div className="flex flex-col gap-1 w-[48%]">
                 <p className="text-black  text-[19px] libre-baskerville-regular">
-                  First Name
+                  Last Name
                 </p>
                 <input
                   className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
-                  placeholder="Enter your name"
+                  placeholder="Enter your last name"
                   name="Name"
+                  required
                 />
               </div>
             </div>
@@ -87,8 +93,9 @@ function Contact() {
                 </p>
                 <input
                   className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
-                  placeholder="Enter your name"
-                  name="Name"
+                  placeholder="Enter your email"
+                  name="Email"
+                  required
                 />
               </div>
 
@@ -98,8 +105,9 @@ function Contact() {
                 </p>
                 <input
                   className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
-                  placeholder="Enter your name"
-                  name="Name"
+                  placeholder="Enter your phone number"
+                  name="Phone Number"
+                  required
                 />
               </div>
             </div>
@@ -110,8 +118,9 @@ function Contact() {
               </p>
               <input
                 className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
-                placeholder="Enter your name"
-                name="Name"
+                placeholder="Enter your subject"
+                name="Subject"
+                required
               />
             </div>
 
@@ -121,8 +130,9 @@ function Contact() {
               </p>
               <textarea
                 className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] h-[150px] text-[#8D8D8D] bg-transparent focus:outline-none"
-                placeholder="Enter your name"
-                name="Name"
+                placeholder="Enter your message"
+                name="Message"
+                required
               />
             </div>
 

@@ -31,8 +31,8 @@ function UpcomingEvents() {
                 </div>
               </div>
 
-              <div className="w-[50px] flex justify-center items-center h-[50px] bg-[#fff] rounded-full">
-                <FaArrowRightLong className="text-[#006600]" size={30} />
+              <div className="w-[60px] flex justify-center items-center h-[60px] bg-[#fff] rounded-full">
+                <FaArrowRightLong className="text-[#006600]" size={25} />
               </div>
             </div>
           ))}

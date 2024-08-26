@@ -14,9 +14,13 @@ const Navbar = () => {
   return (
     <header>
       {/* Mobile Navbar */}
-      <nav className="sm:hidden flex justify-between items-center px-5 py-5">
+      <nav className="sm:hidden flex justify-between items-center px-5 ">
         <div>
-          <img src="/assets/logo.svg" alt="logo" />
+          <img
+            src="/assets/logo.svg"
+            alt="logo"
+            className="h-[40px] object-contain"
+          />
         </div>
         <div className="flex items-center">
           <button onClick={toggleMenu} className="focus:outline-none">
@@ -30,7 +34,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile Menu */}
-      <div className={`sm:hidden ${isOpen ? "block" : "hidden"} px-5 py-3`}>
+      <div className={`sm:hidden ${isOpen ? "block" : "hidden"} px-5 `}>
         <ul className="flex flex-col gap-y-3">
           <li>
             <Link href="#">Home</Link>
@@ -87,9 +91,13 @@ const Navbar = () => {
       </div>
 
       {/* Desktop Navbar */}
-      <nav className="hidden sm:flex justify-between mx-28 py-5 items-center">
+      <nav className="hidden sm:flex justify-between mx-28 py-3  items-center">
         <div>
-          <img src="/assets/logo.svg" alt="logo" />
+          <img
+            src="/assets/logo.svg"
+            alt="logo"
+            className="h-[50px] object-contain"
+          />
         </div>
         <div>
           <ul className="flex gap-x-5">
