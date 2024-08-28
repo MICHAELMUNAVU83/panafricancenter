@@ -17,21 +17,19 @@ const HomeDesc = () => {
   const slidesData = [
     {
       title: "Welcome to Center for Pan African Affairs ",
-      content:
-        "A Peaceful, United, and Integrated Africa and its Global Diaspora",
+      content: "Towards a united,  peaceful and prosperous Africa.",
       image: "/assets/bg1.png",
     },
     {
-      title: "Vision",
+      title: "Building Partnerships for a Stronger Africa",
       content:
-        "To realize a peaceful, united, and integrated Africa, alongside its global diaspora, by promoting collective strength and shared progress.",
-      image: "/assets/bg1.png",
+        "Collaborating for Sustainable Development and Pan African Unity",
+      image: "/assets/slider2.png",
     },
     {
-      title: "Values",
-      content:
-        "To realize a peaceful, united, and integrated Africa, alongside its global diaspora, by promoting collective strength and shared progress.",
-      image: "/assets/bg1.png",
+      title: "Empowering Africa's Future Generations",
+      content: "Engage, Educate, and Inspire for a United Continent",
+      image: "/assets/slider3.png",
     },
   ];
   return (
@@ -44,7 +42,7 @@ const HomeDesc = () => {
           pagination={{ clickable: true }}
           autoplay={{ delay: 3000 }}
           loop={true}
-          className="w-[100%] cursor-pointer items-center bg-center h-[80vh] "
+          className="w-[100%] cursor-pointer items-center bg-center h-[90vh] "
         >
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
@@ -64,10 +62,10 @@ const HomeDesc = () => {
         </Swiper>
 
         <div className="mt-10 flex flex-col justify-center items-center  gap-5">
-          <h1 className="text-[#525560] text-center libre-baskerville-regular text-[22px] ">
+          <h1 className="text-[#525560] uppercase text-center libre-baskerville-regular text-[22px] ">
             Our supporters
           </h1>
-          <div className="flex flex-wrap justify-between items-center w-[100%] py-2">
+          <div className="flex flex-wrap justify-between items-center w-[90%] m-auto py-2">
             <img
               src="/assets/sup1.png"
               alt="supporter1"
