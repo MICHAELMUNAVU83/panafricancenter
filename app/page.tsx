@@ -4,6 +4,7 @@ import GetInvolved from "@/components/GetInvolved";
 import Statistics from "@/components/Statistics";
 import Image from "next/image";
 import NavbarTop from "@/components/NavbarTop";
+import Supporters from "@/components/Supporters";
 import Navbar from "@/components/Navbar";
 import Vision from "@/components/Vision";
 import Posts from "@/components/Posts";
@@ -23,6 +24,7 @@ export default function Home() {
       <Posts />
       <UpcomingEvents />
       <Contact />
+      <Supporters />
 
       <Footer />
     </main>
