@@ -1,6 +1,7 @@
 import React from "react";
-import PageHeader from "../components/PageHeader";
+// import PageHeader from "../components/PageHeader";
 import { IoMdMail } from "react-icons/io";
+import PageHeader from "@/components/PageHeader"
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";

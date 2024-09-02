@@ -15,7 +15,6 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <main>
-      <Navbar />
       <HomeDesc />
       <About />
       <Vision />
@@ -25,8 +24,6 @@ export default function Home() {
       <UpcomingEvents />
       <Contact />
       <Supporters />
-
-      <Footer />
     </main>
   );
 }

@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link href="#events">Events</Link>
           </li>
           <li>
-            <Link href="#contact">Contact Us</Link>
+            <Link href="contact">Contact Us</Link>
           </li>
 
           <li className="flex gap-x-5 mt-5">
@@ -108,7 +108,7 @@ const Navbar = () => {
               <Link href="#events">Events</Link>
             </li>
             <li>
-              <Link href="#contact">Contact Us</Link>
+              <Link href="contact">Contact Us</Link>
             </li>
           </ul>
         </div>
