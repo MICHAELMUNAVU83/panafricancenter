@@ -22,7 +22,7 @@ export default function Home() {
       <Statistics />
       <Posts />
       <UpcomingEvents />
-      <Contact />
+
       <Supporters />
     </main>
   );
