@@ -1,7 +1,7 @@
 import React from "react";
 // import PageHeader from "../components/PageHeader";
 import { IoMdMail } from "react-icons/io";
-import PageHeader from "@/components/PageHeader"
+import PageHeader from "@/components/PageHeader";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { RiFacebookCircleLine } from "react-icons/ri";
@@ -13,12 +13,12 @@ const Contact = () => {
     <div>
       <PageHeader title="Contact Us" />
 
-      <section id="contact">
+      <section id="contact" className="py-8">
         <div className="w-[100%]  justify-center items-center flex flex-col gap-2">
-          <p className="text-[39px] libre-baskerville-bold text-[#1D2130]">
+          <p className="md:text-[39px] text-[24px] libre-baskerville-bold text-[#1D2130]">
             We'd love to hear from you
           </p>
-          <p className="text-[#717171] text-[18px] roboto-regular">
+          <p className="text-[#717171] text-[15px] md:text-[18px] roboto-regular">
             Any question or remarks? Just write us a message!
           </p>
         </div>
@@ -46,14 +46,14 @@ const Contact = () => {
             </div>
 
             <div className="w-[100%] flex justify-between items-center">
-              <div className="flex gap-4 items-center">
-                <div className="w-[50px] h-[50px] bg-[#CD3738] rounded-full flex justify-center items-center">
+              <div className="flex gap-4 mt-6 items-center">
+                <div className="md:w-[50px] md:h-[50px] h-[40px] w-[40px]  bg-[#CD3738] rounded-full flex justify-center items-center">
                   <FaTwitter className="text-white" size={30} />
                 </div>
-                <div className="w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center">
+                <div className="md:w-[50px] md:h-[50px] h-[40px] w-[40px] bg-white rounded-full flex justify-center items-center">
                   <BsInstagram className="text-[#219D80]" size={30} />
                 </div>
-                <div className="w-[50px] h-[50px] bg-[#CD3738] rounded-full flex justify-center items-center">
+                <div className="md:w-[50px] md:h-[50px] h-[40px] w-[40px] bg-[#CD3738] rounded-full flex justify-center items-center">
                   <FaLinkedin className="text-white" size={30} />
                 </div>
               </div>
@@ -153,7 +153,7 @@ const Contact = () => {
         </div>
       </section>
 
-      <div className="md:w-[80%] mt-5 w-[90%] ">
+      <div className="md:w-[80%] m-auto mt-5 w-[90%] ">
         <img
           src="/assets/bigmap.png"
           class="h-[500px] w-[100%] object-cover"
