@@ -17,17 +17,22 @@ export default function MySwiper() {
     {
       title: "Mission",
       content:
-        "To realize a peaceful, united, and integrated Africa, alongside its global diaspora, by promoting collective strength and shared progress.",
+        "To drive the realization of a peaceful, united, and fully integrated Africa and its global diaspora.",
     },
     {
       title: "Vision",
       content:
-        "To realize a peaceful, united, and integrated Africa, alongside its global diaspora, by promoting collective strength and shared progress.",
+        "We seek to realize a united, peaceful, and prosperous Africa where all citizens are empowered and engaged in the continent's development, leveraging their skills and talents to build a sustainable future.",
     },
     {
       title: "Values",
       content:
-        "To realize a peaceful, united, and integrated Africa, alongside its global diaspora, by promoting collective strength and shared progress.",
+        "Unity, Empowerment, Sustainability, Cultural Heritage, Innovation",
+    },
+    {
+      title: "Principles",
+      content:
+        "Unity and Integration , Citizen-Centered Development , Strategic Innovation ,	Collaboration: ",
     },
   ];
 

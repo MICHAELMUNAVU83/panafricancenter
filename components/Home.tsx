@@ -16,19 +16,19 @@ import { Autoplay, Pagination } from "swiper/modules";
 const HomeDesc = () => {
   const slidesData = [
     {
-      title: "Welcome to Center for Pan African Affairs ",
-      content: "Towards a united,  peaceful and prosperous Africa.",
+      title: "Welcome to the Center for Pan African Affairs Kenya ",
+      content: "Towards a united, peaceful and prosperous Africa",
       image: "/assets/bg1.png",
     },
     {
-      title: "Building Partnerships for a Stronger Africa",
+      title: "Empowering minds through knowledge sharing ",
       content:
-        "Collaborating for Sustainable Development and Pan African Unity",
+        "Engage, Educate, Inspire",
       image: "/assets/slider2.png",
     },
     {
-      title: "Empowering Africa's Future Generations",
-      content: "Engage, Educate, and Inspire for a United Continent",
+      title: "Partnership for sustainable development",
+      content: "Partnership for sustainable development",
       image: "/assets/slider3.png",
     },
   ];
