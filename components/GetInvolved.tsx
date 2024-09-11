@@ -16,27 +16,39 @@ function GetInvolved() {
           </h1>
         </div>
 
-        <div className="m-auto w-[90%]  md:w-[60%] grid gap-12 grid-cols-1   md:grid-cols-2">
+        <div className="m-auto md:w-[80%] w-[90%] grid gap-4 grid-cols-1   md:grid-cols-3">
           {DATA.getInvolved.map((item, index) => {
             let tileProps = {};
 
             // Customize styles for each tile based on the title or index
             switch (item.title) {
-              case "Donate to support":
+              case "Advocacy":
                 tileProps = {
-                  bgColor: "bg-red-500",
-                  textColor: "text-[#FFFFFFD9]",
-                  buttonStyle: "border border-white text-white",
-                  buttonText: "Donate Today",
+                  bgColor: "bg-[#219D8066]/60",
+                  textColor: "text-white",
+                  headingColor: "text-white",
+                  buttonStyle: "bg-[#219D80] text-white",
+                  buttonText: "Join",
                 };
                 break;
 
-              case "Become a Member":
+              case "Consciousness Building":
+                tileProps = {
+                  bgColor: "bg-[#CD373866]/80",
+                  textColor: "text-white",
+                  headingColor: "text-white",
+                  buttonStyle: "bg-red-500 text-white",
+                  buttonText: "Join",
+                };
+                break;
+
+              case "Strategic Interventions":
                 tileProps = {
                   bgImage: memberBG.src,
                   textColor: "text-white",
-                  buttonStyle: "bg-red-500 text-white",
-                  buttonText: "Learn More",
+                  headingColor: "text-white",
+                  buttonStyle: "text-white border-[1px] border-white",
+                  buttonText: "Join",
                 };
                 break;
             }

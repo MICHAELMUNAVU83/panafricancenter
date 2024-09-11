@@ -30,16 +30,18 @@ const Posts = () => {
   ];
   return (
     <div id="news" className="md:w-[80%] w-[90%] m-auto mb-10 ">
-      <div className="text-center gap-5 flex items-center justify-center">
-        <div className="h-[2px] bg-[#060] w-12" />
-        <h3 className="uppercase roboto-bold  text-[#A90100] text-[18px] ">
-          Be on the Know
-        </h3>
-      </div>
+      <div>
+        <div className="flex items-center space-x-2">
+          <div className="w-12 h-[2px] bg-[#006600]"></div>
+          <h5 className="text-lg text-[#A90100] font-semibold">
+            Be On The Know
+          </h5>
+        </div>
 
-      <h2 className="text-center text-[#525560] libre-baskerville-regular  text-5xl mt-3">
-        Related Posts
-      </h2>
+        <h2 className="mt-4 md:text-[39px] text-[32px] w-[90%] lg:w-[50%] text-[#525560] libre-baskerville-bold">
+          News And Events
+        </h2>
+      </div>
 
       <div className="mt-16 grid md:grid-cols-3 grid-cols-1  gap-6 md:gap-10">
         {posts.map((post) => (
@@ -67,12 +69,6 @@ const Posts = () => {
             </div>
           </div>
         ))}
-      </div>
-
-      <div className="flex justify-center items-center ">
-        <button className="text-center text-[#A90100] border p-3 mt-10  w-40 rounded-full border-[#A90100]">
-          View All
-        </button>
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link href="#events">Events</Link>
           </li>
           <li>
-            <Link href="contact">Contact Us</Link>
+            <Link href="#contact">Contact Us</Link>
           </li>
 
           <li className="flex gap-x-5 mt-5">
@@ -84,11 +84,13 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <nav className="hidden sm:flex justify-between mx-28 py-3  items-center">
         <div>
-          <img
-            src="/assets/logo.jpg"
-            alt="logo"
-            className="h-[50px] object-contain"
-          />
+          <Link href="/">
+            <img
+              src="/assets/logo.jpg"
+              alt="logo"
+              className="h-[50px] object-contain"
+            />
+          </Link>
         </div>
         <div>
           <ul className="flex gap-x-5">
@@ -108,7 +110,7 @@ const Navbar = () => {
               <Link href="#events">Events</Link>
             </li>
             <li>
-              <Link href="contact">Contact Us</Link>
+              <Link href="#contact">Contact Us</Link>
             </li>
           </ul>
         </div>

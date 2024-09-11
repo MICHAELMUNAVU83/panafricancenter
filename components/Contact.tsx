@@ -10,8 +10,8 @@ import { FaLinkedin } from "react-icons/fa";
 function Contact() {
   return (
     <section id="contact">
-      <div className="w-[100%]  justify-center items-center flex flex-col gap-2">
-        <p className="text-[39px] libre-baskerville-bold text-[#1D2130]">
+      <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col gap-2">
+        <p className="md:text-[39px] text-[24px] libre-baskerville-bold text-[#1D2130]">
           We'd love to hear from you
         </p>
         <p className="text-[#717171] text-[18px] roboto-regular">
@@ -26,8 +26,8 @@ function Contact() {
             <p className="text-white">Say something to start a live chat! </p>
           </div>
 
-          <div className="flex flex-col gap-10 text-[#fff]">
-            <div className="flex text-sm gap-1 items-center">
+          <div className="flex flex-col mt-4 gap-4  md:gap-10 text-[#fff]">
+            <div className="flex text-sm  gap-1 items-center">
               <IoMdMail size={23} />
               <p className="">info@panafricancenter.africa</p>
             </div>
@@ -41,7 +41,7 @@ function Contact() {
             </div>
           </div>
 
-          <div className="w-[100%] flex justify-between items-center">
+          <div className="w-[100%] flex mt-12 justify-between items-center">
             <div className="flex gap-4 items-center">
               <div className="w-[50px] h-[50px] bg-[#CD3738] rounded-full flex justify-center items-center">
                 <FaTwitter className="text-white" size={30} />
@@ -148,8 +148,6 @@ function Contact() {
         </div>
       </div>
     </section>
-
-    
   );
 }
 

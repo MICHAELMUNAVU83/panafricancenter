@@ -55,7 +55,7 @@ export default function MySwiper() {
                   <h2 className="text-3xl  libre-baskerville-bold font-bold mb-4">
                     {slide.title}
                   </h2>
-                  <p className="md:text-lg md:w-[100%] w-[70%] text-sm m-auto josefin-sans-regular">
+                  <p className="md:text-lg md:w-[70%] w-[90%] text-sm m-auto josefin-sans-regular">
                     {slide.content}
                   </p>
                 </div>

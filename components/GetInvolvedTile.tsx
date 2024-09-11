@@ -9,6 +9,7 @@ interface GetInvolvedTileProps {
   buttonText?: string;
   buttonStyle?: string;
   textColor?: string;
+  headingColor?: string;
 }
 
 const GetInvolvedTile = ({
@@ -20,8 +21,9 @@ const GetInvolvedTile = ({
   buttonText = "Learn More",
   buttonStyle,
   textColor,
+  headingColor,
 }: GetInvolvedTileProps) => {
-  const tileClasses = `relative rounded-[30px] h-[400px]   p-6 flex flex-col items-center m-auto w-[100%] m-4 ${bgColor}`;
+  const tileClasses = `relative rounded-[30px] h-[500px]   p-6 flex flex-col items-center m-auto w-[100%] m-4 ${bgColor}`;
 
   const buttonClasses = `mt-4 py-2 px-4 rounded-[30px] ${buttonStyle}`;
 
@@ -43,15 +45,16 @@ const GetInvolvedTile = ({
       )}
 
       <div className="relative z-10">
-        <div className="flex items-center mb-4">
-          <img src={iconSrc} alt={`${title} icon`} className="w-8 h-8 mr-3" />
+        <div className="flex items-center justify-center mb-4">
           <h2
-            className={`text-lg md:text-[32px] libre-baskerville-bold text-white font-bold ${textColor}`}
+            className={`text-lg text-center flex justify-center items-center  md:text-[32px] libre-baskerville-bold text-white font-bold ${headingColor}`}
           >
             {title}
           </h2>
         </div>
-        <p className={`mb-4 leading-[32px] josefin-sans-regular ${textColor}`}>
+        <p
+          className={`mb-4 leading-[32px] h-[300px] josefin-sans-regular ${textColor}`}
+        >
           {description}
         </p>
         <button className={buttonClasses}>{buttonText}</button>

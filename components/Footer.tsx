@@ -8,17 +8,16 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div id="footer" className="bg-[#A90100] text-white mt-16 py-12 ">
-      <div className="w-[90%] mx-auto grid grid-cols-1 gap-8 md:grid-cols-3 ">
+      <div className="w-[90%] mx-auto grid grid-cols-1 gap-12 md:grid-cols-4 ">
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <div className="flex gap-2 items-center">
-              <div className="bg-white w-16 h-16 rounded-full flex justify-center items-center">
-                <img
-                  src="/assets/logo.jpg"
-                  className="w-16 object-contain"
-                  alt="logo"
-                />
-              </div>
+              <img
+                src="/assets/logo.jpg"
+                className="w-16 object-contain"
+                alt="logo"
+              />
+
               <p className="libre-baskerville-bold  text-[24px]">
                 Center For Pan Africa
               </p>
@@ -27,57 +26,40 @@ const Footer = () => {
           <p className="libre-baskerville-regular">
             A Peaceful, United, and Integrated Africa and its Global Diaspora'
           </p>
-
-          <div className="flex items-center gap-4">
-            <div className="flex text-sm gap-1 items-center">
-              <RiFacebookCircleLine size={23} />
-            </div>
-            <div className="flex gap-1 text-sm items-center">
-              <FaTwitter size={23} />
-            </div>
-            <div className="flex items-center">
-              <BsInstagram size={23} />
-            </div>
-            <div className="flex items-center">
-              <FaLinkedin size={23} />
-            </div>
-          </div>
         </div>
 
-        <div className="flex gap-24 w-[100%] items-start">
-          <div className="flex josefin-sans-regular flex-col gap-2">
+        <div className="flex  items-start">
+          <div className="flex josefin-sans-regular flex-col gap-3">
             <p className="libre-baskerville-bold  text-[24px]">Pages</p>
-            <li>
-              <Link href="#">Home</Link>
-            </li>
-            <li>
-              <Link href="#about">About</Link>
-            </li>
-            <li>
-              <Link href="#programs">Programs</Link>
-            </li>
-          </div>
-          <div className="flex josefin-sans-regular flex-col gap-2">
-            <p className="libre-baskerville-bold  text-[24px]">Service</p>
-            <li>
-              <Link href="#news">News</Link>
-            </li>
-            <li>
-              <Link href="#events">Events</Link>
-            </li>
-            <li>
-              <Link href="#contact">Contact Us</Link>
-            </li>
+
+            <Link href="#">Home</Link>
+
+            <Link href="#about">About</Link>
+            <Link href="#programs">Programs</Link>
+            <Link href="#news">News & Events</Link>
           </div>
         </div>
+        <div className="flex josefin-sans-regular flex-col gap-2">
+          <p className="libre-baskerville-bold  text-[24px]">Contact</p>
+          <p>House No. J16, Jamhuri Crescent, Ngong Road +254-718-345-995</p>
 
-        <div className="flex flex-col gap-2">
-          <p className="libre-baskerville-bold  text-[24px]">Maps Location</p>
-          <img
-            src="/assets/maps.png"
-            alt="map"
-            className=" h-[200px] object-cover"
-          />
+          <p>info@panafricancenter.africa</p>
+        </div>
+
+        <div className="flex items-start flex-col gap-4">
+          <p className="libre-baskerville-bold  text-[24px]">Social Media</p>
+          <div className="flex gap-3 items-center ">
+            <RiFacebookCircleLine size={23} /> <p>Facebook</p>
+          </div>
+          <div className="flex gap-3 items-center ">
+            <FaTwitter size={23} /> <p>Twitter</p>
+          </div>
+          <div className="flex gap-3 items-center">
+            <BsInstagram size={23} /> <p>Instagram</p>
+          </div>
+          <div className="flex gap-3 items-center">
+            <FaLinkedin size={23} /> <p>Linkedin</p>
+          </div>
         </div>
       </div>
     </div>
