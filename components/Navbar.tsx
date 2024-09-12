@@ -125,10 +125,6 @@ const Navbar = () => {
           </Link>
 
           <Link href="#">
-            <img src="/assets/profile.svg" alt="profile" className="size-10" />
-          </Link>
-
-          <Link href="#">
             <button className="bg-[#A90100] text-white p-2 rounded-3xl px-5 ">
               Donate Now
             </button>
