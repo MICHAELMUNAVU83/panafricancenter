@@ -9,7 +9,7 @@ function About() {
         </div>
 
         <div className="flex-col josefin-sans-regular text-[22px] justify-center space-y-10  px-5 text-sm lg:text-lg lg:mx-40 ">
-          <h1 className="text-center text-[48px] libre-baskerville-regular">
+          <h1 className="text-center text-[32px] libre-baskerville-regular">
             About Us
           </h1>
 

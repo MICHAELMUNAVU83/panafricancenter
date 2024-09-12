@@ -13,7 +13,7 @@ function Statistics() {
             <div className="w-12 h-[2px] bg-[#A90100]"></div>
           </div>
 
-          <h2 className="mt-4 md:text-[39px] text-[32px] w-[90%] lg:w-[50%] text-[#252A34] libre-baskerville-bold">
+          <h2 className="mt-4 md:text-[30px] text-[18px] w-[90%] lg:w-[50%] text-[#252A34] libre-baskerville-bold">
             Milestones
           </h2>
         </div>

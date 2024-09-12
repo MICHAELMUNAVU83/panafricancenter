@@ -13,14 +13,10 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <div className="flex gap-2 items-center">
               <img
-                src="/assets/logo.jpg"
-                className="w-16 object-contain"
+                src="/assets/full_logo.png"
+                className="h-[100px] object-contain"
                 alt="logo"
               />
-
-              <p className="libre-baskerville-bold  text-[24px]">
-                Center For Pan Africa
-              </p>
             </div>
           </div>
           <p className="libre-baskerville-regular">
@@ -30,7 +26,7 @@ const Footer = () => {
 
         <div className="flex  items-start">
           <div className="flex josefin-sans-regular flex-col gap-3">
-            <p className="libre-baskerville-bold  text-[24px]">Pages</p>
+            <p className="libre-baskerville-bold  text-[30px]">Pages</p>
 
             <Link href="#">Home</Link>
 
@@ -40,14 +36,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex josefin-sans-regular flex-col gap-2">
-          <p className="libre-baskerville-bold  text-[24px]">Contact</p>
+          <p className="libre-baskerville-bold  text-[30px]">Contact</p>
           <p>House No. J16, Jamhuri Crescent, Ngong Road +254-718-345-995</p>
 
           <p>info@panafricancenter.africa</p>
         </div>
 
         <div className="flex items-start flex-col gap-4">
-          <p className="libre-baskerville-bold  text-[24px]">Social Media</p>
+          <p className="libre-baskerville-bold  text-[30px]">Social Media</p>
           <div className="flex gap-3 items-center ">
             <RiFacebookCircleLine size={23} /> <p>Facebook</p>
           </div>

@@ -15,7 +15,7 @@ const Contact = () => {
 
       <section id="contact" className="py-8">
         <div className="w-[100%]  justify-center items-center flex flex-col gap-2">
-          <p className="md:text-[39px] text-[24px] libre-baskerville-bold text-[#1D2130]">
+          <p className="md:text-[30px] text-[20px] libre-baskerville-bold text-[#1D2130]">
             We'd love to hear from you
           </p>
           <p className="text-[#717171] text-[15px] md:text-[18px] roboto-regular">

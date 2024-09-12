@@ -11,7 +11,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="md:w-[80%] w-[90%] m-auto justify-center items-center flex flex-col gap-2">
-        <p className="md:text-[39px] text-[24px] libre-baskerville-bold text-[#1D2130]">
+        <p className="md:text-[39px] text-[30px] libre-baskerville-bold text-[#1D2130]">
           We'd love to hear from you
         </p>
         <p className="text-[#717171] text-[18px] roboto-regular">
@@ -43,13 +43,13 @@ function Contact() {
 
           <div className="w-[100%] flex mt-12 justify-between items-center">
             <div className="flex gap-4 items-center">
-              <div className="w-[50px] h-[50px] bg-[#CD3738] rounded-full flex justify-center items-center">
+              <div className="w-[50px] h-[50px] bg-[#CD3738] hover:bg-white transition-all ease-in-out duration-500 cursor-pointer rounded-full flex justify-center items-center">
                 <FaTwitter className="text-white" size={30} />
               </div>
-              <div className="w-[50px] h-[50px] bg-white rounded-full flex justify-center items-center">
+              <div className="w-[50px] h-[50px] bg-[#CD3738] hover:bg-white transition-all ease-in-out duration-500 cursor-pointer rounded-full flex justify-center items-center">
                 <BsInstagram className="text-[#219D80]" size={30} />
               </div>
-              <div className="w-[50px] h-[50px] bg-[#CD3738] rounded-full flex justify-center items-center">
+              <div className="w-[50px] h-[50px] bg-[#CD3738] hover:bg-white transition-all ease-in-out duration-500 cursor-pointer rounded-full flex justify-center items-center">
                 <FaLinkedin className="text-white" size={30} />
               </div>
             </div>

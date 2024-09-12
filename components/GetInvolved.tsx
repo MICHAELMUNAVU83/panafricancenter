@@ -11,7 +11,7 @@ function GetInvolved() {
           <h3 className="text-[#A90100] uppercase libre-baskerville-regular text-sm lg:text-[18px] ">
             Get involved now
           </h3>
-          <h1 className="text-[#525560] md:text-[48px] text-[32px]  libre-baskerville-regular  ">
+          <h1 className="text-[#525560] md:text-[34px] text-[28px]  libre-baskerville-regular  ">
             Make a difference today
           </h1>
         </div>

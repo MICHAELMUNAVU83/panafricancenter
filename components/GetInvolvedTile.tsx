@@ -47,7 +47,7 @@ const GetInvolvedTile = ({
       <div className="relative z-10">
         <div className="flex items-center justify-center mb-4">
           <h2
-            className={`text-lg text-center flex justify-center items-center  md:text-[32px] libre-baskerville-bold text-white font-bold ${headingColor}`}
+            className={`text-lg text-center flex justify-center items-center  md:text-[30px] leading-[30px] libre-baskerville-bold text-white font-bold ${headingColor}`}
           >
             {title}
           </h2>

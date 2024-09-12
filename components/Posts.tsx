@@ -38,7 +38,7 @@ const Posts = () => {
           </h5>
         </div>
 
-        <h2 className="mt-4 md:text-[39px] text-[32px] w-[90%] lg:w-[50%] text-[#525560] libre-baskerville-bold">
+        <h2 className="mt-4 md:text-[30px] text-[20px] w-[90%] lg:w-[50%] text-[#525560] libre-baskerville-bold">
           News And Events
         </h2>
       </div>

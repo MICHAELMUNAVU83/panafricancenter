@@ -15,7 +15,7 @@ const PageHeader = (props) => {
           {props.title}
         </p>
 
-        <div className="flex meri-bold  text-white  text-[24px] md:text-[32px] gap-2 items-center">
+        <div className="flex meri-bold  text-white  text-[30px] md:text-[32px] gap-2 items-center">
           <p>Home</p>
           <p>{" > "}</p>
           <p className="text-[#FFD70A]">{props.title}</p>

@@ -22,14 +22,13 @@ const HomeDesc = () => {
     },
     {
       title: "Empowering minds through knowledge sharing ",
-      content:
-        "Engage, Educate, Inspire",
-      image: "/assets/slider2.png",
+      content: "Engage, Educate, Inspire",
+      image: "/assets/slider_3.png",
     },
     {
       title: "Partnership for sustainable development",
       content: "Partnership for sustainable development",
-      image: "/assets/slider3.png",
+      image: "/assets/slider_2.png",
     },
   ];
   return (
@@ -50,18 +49,16 @@ const HomeDesc = () => {
                 className="flex text-white flex-col justify-center items-center gap-4  bg-cover w-[100%] h-[100%] text-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
-                <p className="libre-baskerville-bold w-[80%] md:w-[50%] text-[32px] md:text-[56px]">
+                <p className="libre-baskerville-bold w-[80%] md:w-[50%] text-[32px] md:text-[40px]">
                   {slide.title}
                 </p>
-                <p className="josefin-sans-regular   w-[80%] md:w-[50%] text-[18px] md:text-[24px]">
+                <p className="josefin-sans-regular   w-[80%] md:w-[50%] text-[18px] md:text-[22px]">
                   {slide.content}
                 </p>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
-       
       </section>
     </div>
   );
