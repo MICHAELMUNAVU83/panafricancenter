@@ -24,7 +24,7 @@ const Supporters = () => {
       <Swiper
         modules={[Autoplay]}
         spaceBetween={0}
-        slidesPerView={3}
+        slidesPerView={1}
         breakpoints={{
           640: {
             slidesPerView: 1,
