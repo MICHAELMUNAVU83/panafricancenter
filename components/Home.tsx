@@ -16,19 +16,19 @@ import { Autoplay, Pagination } from "swiper/modules";
 const HomeDesc = () => {
   const slidesData = [
     {
-      title: "Welcome to the Center for Pan African Affairs Kenya ",
+      title: "Welcome to the Center for Pan African Affairs - Kenya ",
       content: "Towards a united, peaceful and prosperous Africa",
       image: "/assets/bg1.png",
     },
     {
       title: "Empowering minds through knowledge sharing ",
       content: "Engage, Educate, Inspire",
-      image: "/assets/slider_3.png",
+      image: "/assets/22.jpg",
     },
     {
       title: "Partnership for sustainable development",
       content: "Partnership for sustainable development",
-      image: "/assets/slider_2.png",
+      image: "/assets/26.JPG",
     },
   ];
   return (
@@ -52,7 +52,7 @@ const HomeDesc = () => {
                 <p className="libre-baskerville-bold w-[80%] md:w-[50%] text-[32px] md:text-[40px]">
                   {slide.title}
                 </p>
-                <p className="josefin-sans-regular   w-[80%] md:w-[50%] text-[18px] md:text-[22px]">
+                <p className="josefin-sans-regular  mt-5  w-[80%] md:w-[50%] text-[18px] md:text-[22px]">
                   {slide.content}
                 </p>
               </div>
