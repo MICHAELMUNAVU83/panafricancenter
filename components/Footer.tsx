@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
           </div>
           <p className="libre-baskerville-regular">
-            A Peaceful, United, and Integrated Africa and its Global Diaspora'
+            Towards a united, peaceful and prosperous Africa
           </p>
         </div>
 
