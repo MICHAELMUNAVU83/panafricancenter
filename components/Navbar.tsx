@@ -98,19 +98,20 @@ const Navbar = () => {
               <Link href="#">Home</Link>
             </li>
             <li>
-              <Link href="#about">About</Link>
+              <Link href="#about">About Us</Link>
+            </li>
+            <li>
+              <Link href="#about">Our Work</Link>
             </li>
             <li>
               <Link href="#programs">Programs</Link>
             </li>
             <li>
-              <Link href="#news">News</Link>
+              <Link href="#news">News & Publications</Link>
             </li>
+
             <li>
-              <Link href="#events">Events</Link>
-            </li>
-            <li>
-              <Link href="#contact">Contact Us</Link>
+              <Link href="#footer">Contacts</Link>
             </li>
           </ul>
         </div>

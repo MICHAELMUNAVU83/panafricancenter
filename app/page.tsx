@@ -21,8 +21,6 @@ export default function Home() {
       <GetInvolved />
       <Statistics />
       <Posts />
-      <UpcomingEvents />
-      <Contact />
 
       <Supporters />
     </main>

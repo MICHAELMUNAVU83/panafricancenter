@@ -6,15 +6,8 @@ function Statistics() {
     <section>
       <div className="max-w-6xl px-5 lg:mx-auto py-8 md:py-20">
         <div>
-          <div className="flex items-center space-x-2">
-            <h5 className="text-lg text-[#252A34] font-semibold">
-              Our Fun Facts
-            </h5>
-            <div className="w-12 h-[2px] bg-[#A90100]"></div>
-          </div>
-
-          <h2 className="mt-4 md:text-[30px] text-[18px] w-[90%] lg:w-[50%] text-[#252A34] libre-baskerville-bold">
-            Milestones
+          <h2 className="mt-4 md:text-[30px] text-[20px] w-[90%] lg:w-[50%] text-[#525560] libre-baskerville-bold">
+            Our Fun Facts
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10">

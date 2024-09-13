@@ -31,15 +31,8 @@ const Posts = () => {
   return (
     <div id="news" className="md:w-[80%] w-[90%] m-auto mb-10 ">
       <div>
-        <div className="flex items-center space-x-2">
-          <div className="w-12 h-[2px] bg-[#006600]"></div>
-          <h5 className="text-lg text-[#A90100] font-semibold">
-            Be On The Know
-          </h5>
-        </div>
-
         <h2 className="mt-4 md:text-[30px] text-[20px] w-[90%] lg:w-[50%] text-[#525560] libre-baskerville-bold">
-          News And Events
+          Milestones
         </h2>
       </div>
 

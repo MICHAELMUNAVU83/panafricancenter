@@ -7,13 +7,10 @@ function GetInvolved() {
   return (
     <section id="programs">
       <div className="py-14">
-        <div className=" text-center mb-8">
-          <h3 className="text-[#A90100] uppercase libre-baskerville-regular text-sm lg:text-[18px] ">
-            Get involved now
-          </h3>
-          <h1 className="text-[#525560] md:text-[34px] text-[28px]  libre-baskerville-regular  ">
-            Make a difference today
-          </h1>
+        <div className="m-auto md:w-[80%] w-[90%] text-start mb-8">
+          <h2 className="mt-4 md:text-[30px] text-[20px] w-[90%] lg:w-[50%] text-[#525560] libre-baskerville-bold">
+            Areas Of Focus
+          </h2>
         </div>
 
         <div className="m-auto md:w-[80%] w-[90%] grid gap-4 grid-cols-1   md:grid-cols-3">
