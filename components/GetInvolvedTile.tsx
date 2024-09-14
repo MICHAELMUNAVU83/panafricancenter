@@ -23,7 +23,7 @@ const GetInvolvedTile = ({
   textColor,
   headingColor,
 }: GetInvolvedTileProps) => {
-  const tileClasses = `relative rounded-[30px] h-[500px]   p-6 flex flex-col items-center m-auto w-[100%] m-4 ${bgColor}`;
+  const tileClasses = `relative rounded-[30px] h-[550px]   p-6 flex flex-col items-center m-auto w-[100%] m-4 ${bgColor}`;
 
   const buttonClasses = `mt-4 py-2 px-4 rounded-[30px] ${buttonStyle}`;
 
@@ -53,7 +53,7 @@ const GetInvolvedTile = ({
           </h2>
         </div>
         <p
-          className={`mb-4 leading-[32px] h-[300px] josefin-sans-regular ${textColor}`}
+          className={`mb-4 leading-[32px] h-[320px] josefin-sans-regular ${textColor}`}
         >
           {description}
         </p>

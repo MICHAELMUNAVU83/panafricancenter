@@ -23,12 +23,12 @@ const HomeDesc = () => {
     {
       title: "Empowering minds through knowledge sharing ",
       content: "Engage, Educate, Inspire",
-      image: "/assets/22.jpg",
+      image: "/assets/PIC1.png",
     },
     {
       title: "Partnership for sustainable development",
       content: "Partnership for sustainable development",
-      image: "/assets/26.JPG",
+      image: "/assets/PIX2.png",
     },
   ];
   return (
