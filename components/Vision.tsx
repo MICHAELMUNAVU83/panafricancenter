@@ -75,7 +75,7 @@ export default function MySwiper() {
                   )}
 
                   {slide.content && (
-                    <p className="md:text-base md:w-[70%] w-[90%] text-sm m-auto josefin-sans-regular">
+                    <p className="md:text-lg md:w-[80%] w-[70%] text-sm m-auto josefin-sans-regular">
                       {slide.content}
                     </p>
                   )}
