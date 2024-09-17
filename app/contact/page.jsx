@@ -8,17 +8,209 @@ import { RiFacebookCircleLine } from "react-icons/ri";
 import { FaTwitter } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
+import { RiFacebookCircleFill } from "react-icons/ri";
 const Contact = () => {
   return (
-    <div>
-      <PageHeader title="Contact Us" />
+    <>
+      {/* <PageHeader title="Contact Us" /> */}
 
-      <section id="contact" className="py-8">
-        <div className="w-[100%]  justify-center items-center flex flex-col gap-2">
+      <section id="contact" className="">
+        <div className="flex flex-col w-full  bg-red-100">
+          <div className="w-full m-2 p-2 md:m-4 md:p-4">
+            <div className="flex flex-row  items-center lg:relative lg:top-10">
+              <span className="items-center border-b-2 border-black w-5 md:w-10  mr-2"></span>
+              <h4 className="font-inter uppercase text-sm font-extrabold md:text-lg lg:">
+                contact us
+              </h4>
+            </div>
+          </div>
+          <div className="flex flex-col lg:flex-row lg:items-center">
+            <div className="w-full m-2 p-2 md:m-4 md:p-4">
+              <div className="px-8 md:px-16 lg:px-8 lg:absolute lg:top-[200px] lg:left-[50px]">
+                <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl text-start  ">
+                  We'd love to hear <br className="hidden md:block" />
+                  {""} from you
+                </h1>
+                <p className="mt-4 text-sm leading-relaxed md:text-lg  ">
+                  Have any question in mind or want to enquire? Please feel free
+                  <br className="hidden md:block" />
+                  {""} to contact us through the form of the following details
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col w-full m-2 p-2 md:mx-4 md:p-4 lg:relative lg:bottom-[55px]">
+              <div className="px-8 md:px-16 lg:items-start lg:px-0">
+                <h3 className="font-extrabold text-lg mx-0 my-2 md:text-2xl lg:px-16">
+                  Let's talk!
+                </h3>
+                <div className="flex flex-col start justify-evenly lg:flex-row ">
+                  <span className="text-sm md:text-lg py-2 items-start">
+                    +254-718-345-995
+                  </span>
+                  <span className="text-sm md:text-lg underline py-2  items-start">
+                    info@panafricancenter.africa
+                  </span>
+                </div>
+                <span className="border-b-[200px] my-4 border-white "></span>
+              </div>
+              <div className="w-full my-2 px-8 md:px-16">
+                <h3 className="font-extrabold text-lg mx-0 my-2 md:text-2xl">
+                  HeadOffice
+                </h3>
+                <div className="px-0 mb-2">
+                  <p className="text-sm md:text-lg py-2 ">
+                    House No. J16, Jamhuri Crescent
+                  </p>
+                  <p className="text-sm md:text-lg pb-2">Ngong Road</p>
+                </div>
+              </div>
+              <div className="w-full my-2 md:px-16">
+                <h3 className="font-extrabold text-lg  my-2 md:text-2xl px-8 ">
+                  Our Socials
+                </h3>
+                <div className="w-[100%] items-center lg:justify-normal justify-evenly p-4  flex flex-row ">
+                  <RiFacebookCircleFill size={20} className="cursor-pointer" />
+                  <FaTwitter size={20} className="cursor-pointer ml-4" />
+                  <FaLinkedin size={20} className="cursor-pointer ml-4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="">
+          <div className="md:w-[100%] w-[100%] h-[100%] lg:w-[100%] flex justify-center items-start bg-white mt-8 p-8 md:p-16  lg:items-center items ">
+            <form
+              action="https://formspree.io/f/xvgplpky"
+              method="post"
+              className="w-[100%] lg:w-[50%] flex flex-col gap-3 lg:gap-2 items-center justify-center"
+            >
+              <div className="flex  items-start md:flex-row flex-col gap-4 justify-between  w-[100%]">
+                <div className="flex flex-col gap-1 w-[100%] md:w-[48%] lg:my-2">
+                  <p className="text-black  text-[19px] font-inter font-semibold">
+                    First Name
+                  </p>
+                  <input
+                    className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
+                    placeholder="Enter your first name"
+                    name="Name"
+                    required
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1 w-[100%] md:w-[48%] lg:my-2">
+                  <p className="text-black  text-[19px] font-inter font-semibold">
+                    Last Name
+                  </p>
+                  <input
+                    className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
+                    placeholder="Enter your last name"
+                    name="Name"
+                    required
+                  />
+                </div>
+              </div>
+              <div className="flex  items-start justify-between md:flex-row flex-col gap-4   w-[100%]">
+                <div className="flex flex-col gap-1 w-[100%] md:w-[48%] lg:my-2">
+                  <p className="text-black  text-[19px] font-inter font-semibold">
+                    Email
+                  </p>
+                  <input
+                    className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
+                    placeholder="Enter your email"
+                    name="Email"
+                    required
+                  />
+                </div>
+
+                <div className="flex flex-col gap-1 w-[100%] md:w-[48%] lg:my-2">
+                  <p className="text-black  text-[19px] font-inter font-semibold">
+                    Phone Number
+                  </p>
+                  <input
+                    className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] text-[#8D8D8D] bg-transparent focus:outline-none"
+                    placeholder="Enter your phone number"
+                    name="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="flex flex-col mt-4 gap-1 w-[100%]">
+                <p className="text-black text-[19px] font-inter font-semibold">
+                  Subject
+                </p>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-start gap-2 lg:my-2">
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="General Inquiry"
+                      className="mr-2 ml-8"
+                      required
+                    />
+                    General Inquiry
+                  </label>
+
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="Donation Inquiry"
+                      className="mr-2 ml-8"
+                      required
+                    />
+                    Donation Inquiry
+                  </label>
+
+                  <label className="flex items-center">
+                    <input
+                      type="radio"
+                      name="subject"
+                      value="Membership"
+                      className="mr-2 ml-8"
+                      required
+                    />
+                    Membership Inquiry
+                  </label>
+                </div>
+              </div>
+
+              <div className="flex flex-col mt-4 gap-1 w-[100%]">
+                <p className="text-black  text-[19px] font-inter font-semibold">
+                  Message
+                </p>
+                <textarea
+                  className="w-[100%] p-2 border-b-[2px] border-[#8D8D8D] h-[150px] lg:h-[50px] text-[#8D8D8D] bg-transparent focus:outline-none"
+                  placeholder="Enter your message"
+                  name="Message"
+                  required
+                />
+              </div>
+
+              <div className="w-[100%] justify-end flex mt-4">
+                <button
+                  type="submit"
+                  className="text-center text-white font-inter font-light border px-5 py-3 rounded-[5px] bg-[#CD3738]"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Contact;
+
+{
+  /* <div className="w-[100%]  justify-center items-center flex flex-col gap-2">
           <p className="md:text-[30px] text-[20px] libre-baskerville-bold text-[#1D2130]">
             We'd love to hear from you
           </p>
-          <p className="text-[#717171] text-[15px] md:text-[18px] roboto-regular">
+          <p className="text-[#717171] text-[15px] md:tfont-inter">
             Any question or remarks? Just write us a message!
           </p>
         </div>
@@ -67,7 +259,7 @@ const Contact = () => {
             >
               <div className="flex  items-start md:flex-row flex-col gap-4 justify-between  w-[100%]">
                 <div className="flex flex-col gap-1 w-[100%] md:w-[48%]">
-                  <p className="text-black  text-[19px] libre-baskerville-regular">
+                  <p className="text-black  text-[19px] font-inter">
                     First Name
                   </p>
                   <input
@@ -79,7 +271,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col gap-1 w-[100%] md:w-[48%]">
-                  <p className="text-black  text-[19px] libre-baskerville-regular">
+                  <p className="text-black  text-[19px] font-inter">
                     Last Name
                   </p>
                   <input
@@ -92,7 +284,7 @@ const Contact = () => {
               </div>
               <div className="flex  items-start justify-between md:flex-row flex-col gap-4   w-[100%]">
                 <div className="flex flex-col gap-1 w-[100%] md:w-[48%]">
-                  <p className="text-black  text-[19px] libre-baskerville-regular">
+                  <p className="text-black  text-[19px] font-inter">
                     Email
                   </p>
                   <input
@@ -104,7 +296,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col gap-1 w-[100%] md:w-[48%]">
-                  <p className="text-black  text-[19px] libre-baskerville-regular">
+                  <p className="text-black  text-[19px] font-inter">
                     Phone Number
                   </p>
                   <input
@@ -117,7 +309,7 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col mt-4 gap-1 w-[100%]">
-                <p className="text-black  text-[19px] libre-baskerville-regular">
+                <p className="text-black  text-[19px] font-inter">
                   Subject
                 </p>
                 <input
@@ -129,7 +321,7 @@ const Contact = () => {
               </div>
 
               <div className="flex flex-col mt-4 gap-1 w-[100%]">
-                <p className="text-black  text-[19px] libre-baskerville-regular">
+                <p className="text-black  text-[19px] font-inter">
                   Message
                 </p>
                 <textarea
@@ -143,7 +335,7 @@ const Contact = () => {
               <div className="w-[100%] justify-end flex">
                 <button
                   type="submit"
-                  className="text-center text-white libre-baskerville-regular border px-5 py-3 rounded-[5px] bg-[#CD3738]"
+                  className="text-center text-white font-inter border px-5 py-3 rounded-[5px] bg-[#CD3738]"
                 >
                   Send Message
                 </button>
@@ -160,8 +352,5 @@ const Contact = () => {
           alt="Group-1_1"
         />
       </div>
-    </div>
-  );
-};
-
-export default Contact;
+    </div> */
+}
