@@ -55,6 +55,12 @@ html {
   font-style: normal;
 }
 
+.libre-baskerville-light {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 1px;
+  font-style: normal;
+}
+
 .libre-baskerville-regular {
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
