@@ -21,7 +21,6 @@ export default function Home() {
       <GetInvolved />
       <Statistics />
       <Posts />
-
       <Supporters />
     </main>
   );
