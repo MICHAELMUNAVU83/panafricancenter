@@ -4,24 +4,27 @@ import SectionHeader from "./SectionHeader";
 export default function OurWork() {
   return (
     <>
-      <section className="w-full h-screen">
-        <div className="w-full bg-red-100 p-8 md:px-[150px] lg:px-[150px] lg:py-16">
-          <div className="flex flex-row items-start">
-            <span className="border-b border-black inline-block w-4 h-2 ml-4"></span>{" "}
-            <p className="text-sm items-start font-bold ">WHAT WE DO</p>
-          </div>
-          <div className="flex flex-col">
-            <h1 className="text-2xl font-bold lg:text-4xl">
-              Discover Our Organ
-            </h1>
-            <p className="font-sm">
-              Learn about the different organs that make up the Pan African
-              Youth Association
-            </p>
+      <section className="w-full h-auto">
+        <div className="bg-red-100 w-full ">
+          <div className="w-full mx-auto max-w-[80%] p-8 lg:py-16">
+            <div className="flex flex-row items-start">
+              <span className="border-b border-black inline-block w-4 h-2 ml-4"></span>{" "}
+              <p className="text-sm items-start font-bold ">WHAT WE DO</p>
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-2xl font-bold lg:text-4xl">
+                Discover Our Organ
+              </h1>
+              <p className="font-sm">
+                Learn about the different organs that make up the Pan African
+                Youth Association
+              </p>
+            </div>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row">
-          <div className=" lg:w-1/2 lg:pl-[150px] lg:flex lg:items-center">
+
+        <div className="flex flex-col md:flex-col lg:flex-row w-full mx-auto max-w-[80%]">
+          <div className=" lg:flex md:w-full lg:w-1/2 p-4 lg:items-center items-center">
             <SectionHeader
               head={"Empowering"}
               title={"Pan African Youth Association: Empowering African Youth"}
@@ -31,12 +34,12 @@ export default function OurWork() {
               list={[
                 "Education and Awareness Workshops",
                 "Cultural Promotion and Exchanges",
-                "Cultural promotion and Exchange",npm 
+                "Cultural promotion and Exchange",
               ]}
               Button={"signup"}
             />
           </div>
-          <div className="p-8 md:px-[150px] lg:pr-[150px] items-center lg:w-1/2 ">
+          <div className="p-4 md:w-full lg:w-1/2 items-center w-full mx-auto max-w-[80%] ">
             <Image
               src={"/assets/empowering.png"}
               width={300}
@@ -47,8 +50,8 @@ export default function OurWork() {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse  lg:flex-row">
-          <div className="p-8 my-4 md:px-[150px] lg:pl-[150px] items-center lg:w-1/2">
+        <div className="flex flex-col-reverse lg:flex-row justify-evenly w-full max-w-[80%] mx-auto">
+          <div className=" p-4 items-center lg:w-1/2 w-full mx-auto max-w-[80%]">
             <Image
               src={"/assets/empowerment.png"}
               width={300}
@@ -57,7 +60,7 @@ export default function OurWork() {
               className="md:w-[500px] lg:w-[700px] "
             />
           </div>
-          <div className="lg:w-1/2 lg:pr-[150px] lg:flex lg:items-center">
+          <div className="lg:flex p-4 items-center flex lg:items-center lg:w-1/2">
             <SectionHeader
               head={"Empowerment"}
               title={"Pan African Youth Association: Empowering African Youth"}
@@ -74,8 +77,8 @@ export default function OurWork() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w:1/2 lg:pl-[150px] lg:flex lg:items-center">
+        <div className="flex flex-col lg:flex-row w-full max-w-[80%] mx-auto">
+          <div className="lg:flex p-4  items-center flex lg:items-center lg:w-1/2">
             <SectionHeader
               // head={"Empowering"}
               title={
@@ -92,7 +95,7 @@ export default function OurWork() {
               Button={null}
             />
           </div>
-          <div className="p-8 md:px-[150px] lg:pr-[150px]  items-center">
+          <div className="p-8  items-center lg:w-1/2 w-full mx-auto max-w-[80%]">
             <Image
               src={"/assets/goals.png"}
               width={300}
@@ -103,8 +106,8 @@ export default function OurWork() {
           </div>
         </div>
 
-        <div className="flex flex-col-reverse lg:flex-row">
-          <div className=" md:px-[150px] p-8 lg:pr-[150px] items-center lg:w-1/2">
+        <div className="flex flex-col-reverse lg:flex-row w-full max-w-[80%] mx-auto">
+          <div className=" flex p-4 items-center lg:w-1/2 w-full mx-auto max-w-[80%]">
             <Image
               src={"/assets/sustainable.png"}
               width={300}
@@ -114,7 +117,7 @@ export default function OurWork() {
             />
           </div>
 
-          <div className="lg:w-1/2 lg:pr-[150px] lg:flex lg:items-center">
+          <div className="lg:w-1/2 items-center-flex p-4 lg:flex lg:items-center">
             <SectionHeader
               head={"Sustainable"}
               title={"Driving Climate Action for a Sustainable Future"}
@@ -126,8 +129,8 @@ export default function OurWork() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row w-full">
-          <div className="lg:pl-[150px] lg:w-1/2 lg:flex lg:items-center">
+        <div className="flex flex-col lg:flex-row w-full max-w-[80%] mx-auto">
+          <div className=" p-4 lg:w-1/2 lg:flex lg:items-center">
             <SectionHeader
               title={
                 "Empowering African Communities Through Pan African Center of Excellence"
@@ -142,7 +145,7 @@ export default function OurWork() {
               ]}
             />
           </div>
-          <div className="p-8 md:px-[150px] lg:pr-[150px] lg:w-1/2 items-center">
+          <div className="p-4 flex lg:w-1/2 items-center w-full mx-auto max-w-[80%]">
             <Image
               src={"/assets/education.png"}
               width={300}
