@@ -15,68 +15,81 @@ const Contact = () => {
       {/* <PageHeader title="Contact Us" /> */}
 
       <section id="contact" className="">
-        <div className="flex flex-col w-full  bg-red-100">
-          <div className="w-full m-2 p-2 md:m-4 md:p-4">
-            <div className="flex flex-row  items-center lg:relative lg:top-10">
-              <span className="items-center border-b-2 border-black w-5 md:w-10  mr-2"></span>
-              <h4 className="font-inter uppercase text-sm font-extrabold md:text-lg lg:">
-                contact us
-              </h4>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row lg:items-center">
-            <div className="w-full m-2 p-2 md:m-4 md:p-4">
-              <div className="px-8 md:px-16 lg:px-8 lg:absolute lg:top-[200px] lg:left-[50px]">
-                <h1 className="font-extrabold text-4xl md:text-5xl lg:text-6xl text-start  ">
-                  We'd love to hear <br className="hidden md:block" />
-                  {""} from you
-                </h1>
-                <p className="mt-4 text-sm leading-relaxed md:text-lg  ">
-                  Have any question in mind or want to enquire? Please feel free
-                  <br className="hidden md:block" />
-                  {""} to contact us through the form of the following details
-                </p>
+        <div className="bg-red-100 w-full ">
+          <div className="flex flex-col w-full max-w-[80%] mx-auto py-16 ">
+            <div className="w-full my-4 p-2 ">
+              <div className="flex flex-row  items-center w-full">
+                <span className="items-center border-b-2 border-black w-5 md:w-10  mr-2"></span>
+                <h4 className="font-inter uppercase text-sm font-extrabold md:text-lg">
+                  contact us
+                </h4>
               </div>
             </div>
-            <div className="flex flex-col w-full m-2 p-2 md:mx-4 md:p-4 lg:relative lg:bottom-[55px]">
-              <div className="px-8 md:px-16 lg:items-start lg:px-0">
-                <h3 className="font-extrabold text-lg mx-0 my-2 md:text-2xl lg:px-16">
-                  Let's talk!
-                </h3>
-                <div className="flex flex-col start justify-evenly lg:flex-row ">
-                  <span className="text-sm md:text-lg py-2 items-start">
-                    +254-718-345-995
-                  </span>
-                  <span className="text-sm md:text-lg underline py-2  items-start">
-                    info@panafricancenter.africa
-                  </span>
-                </div>
-                <span className="border-b-[200px] my-4 border-white "></span>
-              </div>
-              <div className="w-full my-2 px-8 md:px-16">
-                <h3 className="font-extrabold text-lg mx-0 my-2 md:text-2xl">
-                  HeadOffice
-                </h3>
-                <div className="px-0 mb-2">
-                  <p className="text-sm md:text-lg py-2 ">
-                    House No. J16, Jamhuri Crescent
+            <div className="flex flex-col lg:flex-row lg:items-start">
+              <div className="w-full m-2 p-2 md:m-4 md:p-4">
+                <div className="px-4 md:px-12 lg:px-8 lg:absolute lg:top-[200px] lg:left-[50px]">
+                  <h1 className="font-extrabold text-3xl md:text-5xl lg:text-6xl text-start  ">
+                    We'd love to hear <br className="hidden md:block" />
+                    {""} from you
+                  </h1>
+                  <p className="mt-4 text-sm leading-relaxed md:text-lg  ">
+                    Have any question in mind or want to enquire? Please feel
+                    free
+                    <br className="hidden md:block" />
+                    {""} to contact us through the form of the following details
                   </p>
-                  <p className="text-sm md:text-lg pb-2">Ngong Road</p>
                 </div>
               </div>
-              <div className="w-full my-2 md:px-16">
-                <h3 className="font-extrabold text-lg  my-2 md:text-2xl px-8 ">
-                  Our Socials
-                </h3>
-                <div className="w-[100%] items-center lg:justify-normal justify-evenly p-4  flex flex-row ">
-                  <RiFacebookCircleFill size={20} className="cursor-pointer" />
-                  <FaTwitter size={20} className="cursor-pointer ml-4" />
-                  <FaLinkedin size={20} className="cursor-pointer ml-4" />
+              <div className="flex flex-col w-full m-2 p-2 md:mx-4 md:p-4 lg:relative lg:bottom-[55px]">
+                <div className="px-8 md:px-16 lg:items-start lg:px-0">
+                  <h3 className="font-extrabold text-lg mx-0 my-2 md:text-2xl lg:px-16">
+                    Let's talk!
+                  </h3>
+                  <div className="flex flex-col start justify-evenly lg:flex-row ">
+                    <span className="text-sm md:text-lg py-2 lg:pl-8 items-start">
+                      +254-718-345-995
+                    </span>
+                    <span className="text-sm md:text-lg underline py-2  items-start">
+                      info@panafricancenter.africa
+                    </span>
+                  </div>
+                  <span className="border-b-[200px] my-4 border-white "></span>
+                </div>
+                <div className="w-full my-2 px-8 md:px-16">
+                  <h3 className="font-extrabold text-lg mx-0 my-2 md:text-2xl">
+                    HeadOffice
+                  </h3>
+                  <div className="px-0 mb-2">
+                    <p className="text-sm md:text-lg py-2 ">
+                      House No. J16, Jamhuri Crescent
+                    </p>
+                    <p className="text-sm md:text-lg pb-2">Ngong Road</p>
+                  </div>
+                </div>
+                <div className="w-full my-2 md:px-8 items-start flex flex-col">
+                  <h3 className="font-extrabold text-lg  my-2 md:text-2xl px-8 ">
+                    Our Socials
+                  </h3>
+                  <div className="w-full mx-auto items-start lg:justify-normal  flex flex-row max-w-[80%]">
+                    <RiFacebookCircleFill
+                      size={20}
+                      className="cursor-pointer text-gray-600"
+                    />
+                    <FaTwitter
+                      size={20}
+                      className="cursor-pointer ml-2 text-gray-600"
+                    />
+                    <FaLinkedin
+                      size={20}
+                      className="cursor-pointer ml-2 text-gray-600"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div className="">
           <div className="md:w-[100%] w-[100%] h-[100%] lg:w-[100%] flex justify-center items-start bg-white mt-8 p-8 md:p-16  lg:items-center items ">
             <form
