@@ -155,6 +155,24 @@ export default function OurWork() {
             />
           </div>
         </div>
+        <div
+          className="w-full max-w-[80%] mx-auto flex flex-col bg-cover bg-center rounded-2xl h-[300px] my-20 "
+          style={{ backgroundImage: "url(/assets/parallax.png)" }}
+        >
+          {/* <div className="flex flex-col items-center">
+            <h1 className="text-3xl font-bold ">
+              Join the Pan African Movement
+            </h1>
+            <p>
+              Be part of a United Africa Promoting peace, development and
+              cultural exchange
+            </p>
+          </div>
+          <div>
+            <button>Donate</button>
+            <button>Becom a member</button>
+          </div> */}
+        </div>
       </section>
     </>
   );
