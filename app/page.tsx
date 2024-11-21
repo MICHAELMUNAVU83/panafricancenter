@@ -11,12 +11,16 @@ import Posts from "@/components/Posts";
 import Footer from "@/components/Footer";
 import UpcomingEvents from "@/components/UpcomingEvents";
 import Contact from "@/components/Contact";
+import StandForSection from "@/components/Home/StandForSection";
+import WhatWeDo from "@/components/Home/WhatWeDo";
 
 export default function Home() {
   return (
     <main>
       <HomeDesc />
-      <About />
+      <StandForSection />
+      <WhatWeDo />
+      {/* <About /> */}
       <Vision />
       <GetInvolved />
       <Statistics />

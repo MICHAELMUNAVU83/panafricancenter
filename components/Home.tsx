@@ -9,7 +9,6 @@ import "swiper/css/autoplay";
 
 import sliderBG from "@/public/assets/slider-background.svg";
 
-// Import required modules for Swiper
 
 import { Autoplay, Pagination } from "swiper/modules";
 
