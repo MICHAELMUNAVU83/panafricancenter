@@ -36,14 +36,13 @@ export const VisionData = [
   },
 ];
 
-export const WhyData = [
+export const JoinData = [
   {
     id: 1,
     headerTag: `Join Us`,
     title: `Why Join CPAA?`,
-    imgRef: `/assets/hero/wed0.jpg`,
+    imgRef: `/assets/hero/membership.jpg`,
     desc: `Become part of a transformative movement that fosters innovation, collaboration, and shared growth across the continent and its diaspora. Together, we can make the Pan-African dream a reality! `,
-
     button: `Become a member today`,
   },
 ];
@@ -55,9 +54,48 @@ export const EventData = [
     title: `Upcoming Event`,
     subTitle: "Pan-African Synergy Conference 2024",
     date: ": November 28-29, 2024",
+    sortableDate: "2024-11-28",
     venue: "University of Nairobi",
     desc: `Join us for this landmark gathering of scholars, policymakers, and practitioners discussing "Bridging Continents for Unity, Action, and Prosperity.`,
     btn: `Register Now`,
+    imgRef: `/assets/hero/upcoming.jpg`,
+  },
+  {
+    id: `2`,
+    headerTag: `Past`,
+    title: `Past Event`,
+    subTitle: "Pan-African Synergy Conference 2024",
+    date: ":May 28-29, 2024",
+    sortableDate: "2024-5-28",
+    venue: "University of Nairobi",
+    desc: `Join us for this landmark gathering of scholars, policymakers, and practitioners discussing "Bridging Continents for Unity, Action, and Prosperity.`,
+    btn: `View Agenda`,
+    imgRef: `/assets/bigmap.png`,
+  },
+
+  {
+    id: `3`,
+    headerTag: `Past`,
+    title: `Past Event`,
+    subTitle: "Pan-African Synergy Conference 2024",
+    date: ":April 28-29, 2024",
+    sortableDate: "2024-4-28",
+    venue: "University of Nairobi",
+    desc: `Join us for this landmark gathering of scholars, policymakers, and practitioners discussing "Bridging Continents for Unity, Action, and Prosperity.`,
+    btn: `View Agenda`,
+    imgRef: `/assets/bigmap.png`,
+  },
+  {
+    id: `4`,
+    headerTag: `Past`,
+    title: `Past Event`,
+    subTitle: "Pan-African Synergy Conference 2024",
+    date: ": January 28-29, 2024",
+    sortableDate: "2024-1-28",
+    venue: "University of Nairobi",
+    desc: `Join us for this landmark gathering of scholars, policymakers, and practitioners discussing "Bridging Continents for Unity, Action, and Prosperity.`,
+    btn: `View Agenda`,
+    imgRef: `/assets/bigmap.png`,
   },
 ];
 export const ImpactData = [
@@ -68,6 +106,7 @@ export const ImpactData = [
       `Partnered with 20+ organizations across Africa and the diaspora to advance cultural and socio-economic development.`,
       `Trained and empowered 100+ leaders to promote Pan-African ideals in their communities.`,
     ],
+    desc: `Together, we are shaping the future of Africa`,
     list2: [
       {
         id: 1,
@@ -103,25 +142,25 @@ export const teamData = [
         id: 1,
         name: `Orlando Simba `,
         role: `Executive Director`,
-        image: ``,
+        image: `/assets/Team/FrancisWeber.png`,
       },
       {
         id: 2,
         name: `Ouma Don Collins `,
         role: `Head of Programs`,
-        image: ``,
+        image: `/assets/Team/DaleBanks.png`,
       },
       {
         id: 3,
         name: `Ishmail Owuor`,
         role: `Head of Membership Coordination`,
-        image: ``,
+        image: `/assets/Team/LeornardJohnDavis.png`,
       },
       {
         id: 4,
         name: `OGeorge Ndhawa `,
         role: `Head of Partnership and Liaison`,
-        image: ``,
+        image: `/assets/Team/LeornardJohnDavis.png`,
       },
     ],
   },
@@ -134,7 +173,7 @@ export const AboutData = {
       "The Center for Pan African Affairs (CPAA) is a collaborative hub dedicated to fostering Africa’s unity, development, and prosperity through the ideals of Pan-Africanism.",
       "Guided by the African Union’s Agenda 2063, we inspire and empower African citizens and the diaspora to take an active role in shaping the continent’s future.",
     ],
-    img: "",
+    img: "/assets/hero/about.jpg",
   },
   tiles: [
     {
@@ -157,21 +196,25 @@ export const AboutData = {
       tileDesc: [
         {
           id: 1,
+          img: `/assets/hero/unity1.png`,
           title: "Unity",
           desc: "Promoting solidarity and collaboration among African nations and the diaspora.",
         },
         {
           id: 2,
+          img: `/assets/hero/personal-development.png`,
           title: "Empowerment",
           desc: "Enabling individuals to drive Africa’s transformation.",
         },
         {
           id: 3,
+          img: `/assets/hero/pride.png`,
           title: "Cultural Pride",
           desc: "Celebrating Africa’s diverse heritage and identity.",
         },
         {
           id: 4,
+          img: `/assets/hero/save-the-planet.png`,
           title: "Sustainability",
           desc: "Advancing long-term socio-economic and environmental well-being.",
         },
@@ -260,5 +303,4 @@ export const NewsData = [
       `Success stories from our Consciousness Building workshops across Africa.  `,
     ],
   },
-  s,
 ];

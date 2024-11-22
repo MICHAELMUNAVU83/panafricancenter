@@ -4,6 +4,7 @@ import { Poppins, Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/Home/ScrollToTop";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <ScrollToTop />
         <Footer />
       </body>
     </html>

@@ -13,6 +13,10 @@ import UpcomingEvents from "@/components/UpcomingEvents";
 import Contact from "@/components/Contact";
 import StandForSection from "@/components/Home/StandForSection";
 import WhatWeDo from "@/components/Home/WhatWeDo";
+import JoinSection from "@/components/Home/Join";
+import EventComponent from "@/components/EventComponent";
+import OurTeam from "@/components/Home/Team";
+import ImpactComponent from "@/components/Home/Impact";
 
 export default function Home() {
   return (
@@ -20,12 +24,17 @@ export default function Home() {
       <HomeDesc />
       <StandForSection />
       <WhatWeDo />
+      <JoinSection />
+      <EventComponent />
+      <ImpactComponent />
+      <OurTeam />
+
       {/* <About /> */}
-      <Vision />
-      <GetInvolved />
-      <Statistics />
-      <Posts />
-      <Supporters />
+      {/* <Vision /> */}
+      {/* <GetInvolved /> */}
+      {/* <Statistics /> */}
+      {/* <Posts /> */}
+      {/* <Supporters /> */}
     </main>
   );
 }

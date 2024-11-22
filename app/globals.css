@@ -96,7 +96,7 @@ h1,
 h2,
 h3,
 button {
-  font-family: "poppins", sans-serif;
+  font-family: "libre-baskerville-bold", sans-serif;
   font-weight: 700;
 }
 h4,
@@ -106,4 +106,13 @@ p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
-
+::-webkit-scrollbar {
+  width: 15px;
+  height: 300px;
+}
+::-webkit-scrollbar-thumb {
+  background: red;
+}
+::-webkit-scrollbar-corner {
+  border-radius: 12px;
+}
