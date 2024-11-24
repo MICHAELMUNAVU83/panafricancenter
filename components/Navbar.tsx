@@ -22,20 +22,25 @@ const Navbar = () => {
     {
       label: "About Us",
       children: [
-        { label: "Who We Are", path: "/about/who-we-are" },
-        { label: "Our Vision", path: "/about/vision" },
-        { label: "Our Mission", path: "/about/mission" },
-        { label: "Our Values", path: "/about/values" },
+        { label: "Who We Are", path: "/about" },
+        { label: "Our Vision", path: "/about" },
+        { label: "Our Mission", path: "/about" },
+        { label: "Our Values", path: "/about" },
+        { label: "Our Work", path: "/about" },
       ],
     },
     {
       label: "Programs",
       children: [
-        { label: "Consciousness Building", path: "/programs/consciousness" },
-        { label: "Strategic Interventions", path: "/programs/strategic" },
+        { label: "Consciousness Building", path: "/programs" },
+        { label: "Strategic Interventions", path: "/programs" },
+        { label: "Become A Member", path: "/programs" },
       ],
     },
-    { label: "Contact Us", children: [] },
+    {
+      label: "Contact Us",
+      children: [{ label: "Talk to us", path: "/contact" }],
+    },
   ];
 
   return (

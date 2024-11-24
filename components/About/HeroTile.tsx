@@ -30,6 +30,13 @@ export default function HeroTile({ about, tiles }) {
               key={tile.id}
               className="p-6 border rounded-lg shadow-md hover:shadow-lg"
             >
+              <div className="flex items-center justify-center ">
+                <img
+                  src={tile.imgRef}
+                  alt={tile.tileTitle}
+                  className="w-20 h-20"
+                />
+              </div>
               <h2 className="text-center text-[20px] md:text-[24px] lg:text-[28px] font-semibold mb-4">
                 {tile.tileTitle}
               </h2>

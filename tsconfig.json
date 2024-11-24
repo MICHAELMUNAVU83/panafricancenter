@@ -22,7 +22,7 @@
     }
   },
 
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/about/page.jsx", "components/About.tsx", "components/AboutCards.tsx", "components/EventComponent.tsx", "components/OurWork.jsx", "components/Awards.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/about/page.tsx", "components/About.tsx", "components/AboutCards.tsx", "components/EventComponent.tsx", "components/OurWork.jsx", "components/Awards.jsx"],
 
   "exclude": ["node_modules"]
 }

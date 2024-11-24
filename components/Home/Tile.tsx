@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function TileComponent({
   headerTile,
@@ -39,9 +40,11 @@ export default function TileComponent({
             <p className="text-[16px] md:text-[20px] lg:text-[24px]">
               {desc[1]}
             </p>
-            <button className="px-4 py-2 md:w-full lg:px-8 lg:py-4 mt-10 bg-red-600 text-yellow-500 text-base lg:text-lg">
-              {btn}
-            </button>
+            <Link href={"/about"}>
+              <button className="px-4 py-2 md:w-full lg:px-8 lg:py-4 mt-10 bg-red-600 text-yellow-500 text-base lg:text-lg">
+                {btn}
+              </button>
+            </Link>
           </div>
         </div>
         <div className="w-full flex items-center justify-center ">
@@ -106,9 +109,11 @@ export const TileComponent2 = ({
               ))}
             </ul>
           </div>
-          <button className="px-4 py-2 md:w-full lg:px-8 lg:py-4 mt-10 bg-red-600 text-yellow-500 text-base lg:text-lg">
-            {btn}
-          </button>
+          <Link href={"/programs" }>
+            <button className="px-4 py-2 md:w-full lg:px-8 lg:py-4 mt-10 bg-red-600 text-yellow-500 text-base lg:text-lg">
+              {btn}
+            </button>
+          </Link>
         </div>
       </div>
     </>

@@ -16,7 +16,7 @@ const Supporters = () => {
     "/assets/4.png",
   ];
   return (
-    <div className="mt-10  md:w-[80%] w-[90%] m-auto flex flex-col justify-center items-center  gap-5">
+    <div className="mt-10  md:max-w-[80%] max-w-[90%] m-auto flex flex-col justify-center items-center w-full mx-auto gap-5">
       <h1 className="text-[#525560] uppercase text-center libre-baskerville-regular text-[22px] ">
         Our Partners
       </h1>

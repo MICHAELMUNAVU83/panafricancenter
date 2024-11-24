@@ -40,7 +40,7 @@ export default function ImpactTile({
                   alt={item.title}
                   width={500}
                   height={500}
-                  className="object-cover h-full w-full"
+                  className="object-contain bg-center  h-full w-full"
                 />
               </div>
               <h3 className="text-[20px] md:text-[24px] lg:text-[28px] mb-2 text-red-600">

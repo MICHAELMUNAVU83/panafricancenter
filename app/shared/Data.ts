@@ -112,19 +112,19 @@ export const ImpactData = [
         id: 1,
         title: `Become a Member`,
         desc: "Join our growing community of visionaries.  ",
-        img: ``,
+        img: `/assets/hero/member-card.png`,
       },
       {
         id: 2,
         title: `Volunteer`,
         desc: "Share your skills and ideas to drive our programs.",
-        img: ``,
+        img: `/assets/hero/volunteer.png`,
       },
       {
         id: 3,
         title: `Donate`,
         desc: "Support our work and help us reach more communities.",
-        img: ``,
+        img: `/assets/hero/donation.png`,
       },
     ],
     btn: "Join Us!",
@@ -178,6 +178,7 @@ export const AboutData = {
   tiles: [
     {
       id: 1,
+      imgRef: `/assets/hero/vision.png`,
       tileTitle: "Our Vision",
       tileDesc: [
         "A united, peaceful, and prosperous Africa, where empowered citizens drive sustainable development and collaboration.",
@@ -185,6 +186,7 @@ export const AboutData = {
     },
     {
       id: 2,
+      imgRef: `/assets/hero/target.png`,
       tileTitle: "Our Mission",
       tileDesc: [
         "To build a people-centered Pan-African movement by promoting education, advocacy, and strategic interventions that align with Africa’s collective aspirations.",
@@ -230,14 +232,25 @@ export const WorkData = [
     desc: "At CPAA, we take a three-pronged approach to achieving the Pan-African dream",
     list: [
       {
+        headerTag: `Build Today`,
+
+        action: `Join Us`,
+        img: `/assets/hero/leaf.jpg`,
         title: `Consciousness Building`,
         desc: `Educating communities about Pan-African ideals through workshops, cultural exchanges, and knowledge-sharing platforms.`,
       },
       {
+        img: `/assets/hero/advocacy.jpg`,
+        action: `Join Us`,
+        headerTag: `Advocate`,
         title: `Advocacy`,
         desc: `Collaborating with institutions to align policies with Pan-African values, with a focus on governance, trade, and education.`,
       },
       {
+        img: `/assets/hero/strategic.jpg`,
+        headerTag: `PanAfrica`,
+
+        action: `Join Us`,
         title: `Strategic Interventions`,
         desc: `Providing technical support, mobilizing resources, and strengthening leadership capacities across Africa and the diaspora. `,
       },
@@ -248,26 +261,45 @@ export const WorkData = [
 export const ProgramData = [
   {
     id: 1,
+    imgRef: `/assets/hero/knowledge.jpg`,
     title: ["Consciousness Building"],
     desc: [
-      `Workshops and Seminars: Empowering communities with knowledge on Pan-Africanism`,
-      `Cultural Promotion: Celebrating Africa’s rich heritage through events and exchanges.`,
-      `Knowledge Sharing: Hosting forums and online discussions to foster collaboration.`,
+      {
+        img: `/assets/program/workshop.png`,
+        title: `Workshops and Seminars:`,
+        desc: ` Empowering communities with knowledge on Pan-Africanism`,
+      },
+      {
+        img: `/assets/program/teaching.png`,
+        title: `Cultural Promotion:`,
+        desc: ` Celebrating Africa’s rich heritage through events and exchanges.`,
+      },
+      {
+        img: `/assets/program/brainstorming.png`,
+        title: `Knowledge Sharing:`,
+        desc: ` Hosting forums and online discussions to foster collaboration.`,
+      },
     ],
   },
   {
     id: 2,
+    imgRef: `/assets/hero/advocacy.jpg`,
     title: ["Advocacy"],
     desc: [
       {
+        img: `/assets/program/policy.png`,
         title: `Policy Development:`,
         desc: `Supporting governance institutions to adopt Pan-African principles.`,
       },
       {
+        img: `/assets/program/focus.png`,
+
         title: `Sectoral Focus:`,
         desc: `Promoting investments in agriculture, technology, and education.`,
       },
       {
+        img: `/assets/program/intergration.png`,
+
         title: `Integration of Pan-Africanism:`,
         desc: ` Incorporating Pan-African ideals in national and regional frameworks`,
       },
@@ -275,17 +307,23 @@ export const ProgramData = [
   },
   {
     id: 3,
+    imgRef: `/assets/program/strategic1.jpg`,
     title: ["Strategic Interventions "],
     desc: [
       {
+        img: `/assets/program/goal.png`,
+
         title: `Leadership Development`,
         desc: `Training leaders to uphold Pan-African principles in governance. `,
       },
       {
+        img: `/assets/program/resource-allocation.png`,
+
         title: `Resource Mobilization`,
         desc: `Securing funding and partnerships for impactful programs.`,
       },
       {
+        img: `/assets/program/support.png`,
         title: `Technical Support`,
         desc: ` Assisting organizations with Pan-African-centered project implementation.`,
       },
