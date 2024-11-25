@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/assets/logo.jpg" sizes="any" />
+        <link rel="icon" href="/CPAA_LOGO.png" sizes="any" />
       </head>
       <body
         className={`${(dmSans.className, poppins.className, roboto.className)}`}

@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { EventData } from "@/app/shared/Data";
 import EventTile from "./Home/EventTile";
@@ -34,12 +35,22 @@ export default function EventComponent() {
   return (
     <section className="w-full h-auto py-8">
       <div className="max-w-[90%] lg:max-w-[80%] mx-auto">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+        >
           <h1 className="text-[20px] md:text-[30px] lg:text-[48px]">Events</h1>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-          <div className="col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <motion.div
+            className="col-span-1 lg:col-span-1 md:col-span-2"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
             <EventTile
               headerTag={sortedEvents[featuredIndex].headerTag}
               title={sortedEvents[featuredIndex].title}
@@ -50,14 +61,22 @@ export default function EventComponent() {
               btn={sortedEvents[featuredIndex].btn}
               imgRef={sortedEvents[featuredIndex].imgRef}
             />
-          </div>
+          </motion.div>
 
-          <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="col-span-2 lg:col-span-2 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
             {paginatedEvents.map((data, index) => (
-              <div
+              <motion.div
                 key={data.id}
                 className="cursor-pointer hover:opacity-80 transition-opacity"
                 onClick={() => handleEventClick(index + paginationIndex)}
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.2,
+                  ease: "easeInOut",
+                }}
+                viewport={{ once: true }}
               >
                 <EventTile
                   headerTag={data.headerTag}
@@ -69,18 +88,22 @@ export default function EventComponent() {
                   btn={data.btn}
                   imgRef={data.imgRef}
                 />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
 
         {pastEvents.length > 2 && (
-          <button
+          <motion.button
             className="mt-4 mx-auto bg-black text-white px-4 py-2 lg:px-8 lg:py-4 rounded-lg hover:bg-red-600"
             onClick={handleNextPagination}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            viewport={{ once: true }}
           >
             Next
-          </button>
+          </motion.button>
         )}
       </div>
     </section>

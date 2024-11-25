@@ -1,27 +1,41 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
 import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FaMapLocation } from "react-icons/fa6";
-const openLink = (url) => {
+
+const openLink = (url: string) => {
   window.open(url, "_blank", "noopener,noreferrer");
 };
 
-const sendEmail = (email) => {
+const sendEmail = (email: string) => {
   window.location.href = `mailto:${email}`;
 };
 
-const callPhone = (phone) => {
+const callPhone = (phone: string) => {
   window.location.href = `tel:${phone}`;
 };
 
 const Contact = () => {
   return (
     <>
-      <section className="w-full h-screen flex items-center">
+      <motion.section
+        className="w-full h-auto lg:h-screen flex items-center"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+        viewport={{ once: true }}
+      >
         <div className="max-w-[90%] lg:max-w-[80%] mx-auto flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
-          <div className="w-full flex flex-col shadow-md p-8 rounded-3xl">
+          <motion.div
+            className="w-full flex flex-col shadow-md p-8 rounded-3xl"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
             <h1 className="text-red-600 text-[24px] md:text-[30px] lg:text-[44px] font-bold">
               We'd love to hear from you!
             </h1>
@@ -95,9 +109,15 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="w-full flex">
+          <motion.div
+            className="w-full flex"
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            viewport={{ once: true }}
+          >
             <form
               action="https://formspree.io/f/xvgplpky"
               method="post"
@@ -170,9 +190,9 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

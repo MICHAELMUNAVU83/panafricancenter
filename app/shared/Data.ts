@@ -333,6 +333,11 @@ export const ProgramData = [
 //
 export const NewsData = [
   {
+    imgRef: [
+      "/Pan African Synergy Conference Banner.jpg",
+      "/Pan African Synergy Conference Banner.jpg",
+      "/Pan African Synergy Conference Banner.jpg",
+    ],
     title: [`News and Publications  `, `Recent Highlights  `],
     desc: `Stay informed with the latest updates from CPAA. Read about our programs, success stories, and expert insights on advancing Pan-African ideals.`,
     list: [

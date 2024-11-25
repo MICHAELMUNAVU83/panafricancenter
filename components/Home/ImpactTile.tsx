@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 export default function ImpactTile({
   title = ["", ""],
   desc = "",
@@ -53,9 +53,12 @@ export default function ImpactTile({
       </div>
 
       <div className="mt-8 text-center">
+        <Link href={'/programs'}>
         <button className="bg-black text-white px-6 py-2 lg:px-8 lg:py-4 rounded-lg hover:bg-red-600">
           {btn}
         </button>
+        </Link>
+       
       </div>
     </div>
   );

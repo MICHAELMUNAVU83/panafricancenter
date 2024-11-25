@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function JoinTile({ headerTag, title, desc, btn, imgRef }) {
   return (
@@ -13,7 +14,10 @@ export default function JoinTile({ headerTag, title, desc, btn, imgRef }) {
         <div className="flex flex-col space-y-8">
           <h1 className="text-[24px] md:text-[34px] lg:text-[48px]">{title}</h1>
           <p className="text-[16px] md:text-[20px] lg:text-[24px]">{desc}</p>
+          <Link href={'/programs'}>
           <button className="px-8 py-4 border-2 border-red-600">{btn}</button>
+
+          </Link>
         </div>
       </div>
       <div className="w-full mt-10 ">

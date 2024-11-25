@@ -1,3 +1,6 @@
+"use client";
+import Link from "next/link";
+
 export default function WorkTile({ headerTag, title, bgImg, desc, action }) {
   return (
     <div
@@ -17,9 +20,11 @@ export default function WorkTile({ headerTag, title, bgImg, desc, action }) {
           <span className="border-b-2 w-full h-2"></span>
           <p className="text-[14px] md:text-[20px] lg:text-[24px]">{desc}</p>
           <span className="border-b-2 w-full h-2"></span>
-          <button className="px-4 py-2 md:px-8 md:py-4 border-b-2 border-red-600 hover:border-2 hover:border-red-700 hover:rounded-3xl ease-in transition-all ">
-            {action}
-          </button>
+          <Link href={"/programs"}>
+            <button className="px-4 py-2 md:px-8 md:py-4 border-b-2 border-red-600 hover:border-2 hover:border-red-700 hover:rounded-3xl ease-in transition-all ">
+              {action}
+            </button>
+          </Link>
         </div>
       </div>
     </div>

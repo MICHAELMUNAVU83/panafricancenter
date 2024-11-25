@@ -9,6 +9,7 @@ import JoinSection from "@/components/Home/Join";
 import EventComponent from "@/components/EventComponent";
 import OurTeam from "@/components/Home/Team";
 import ImpactComponent from "@/components/Home/Impact";
+import NewsComponent from "@/components/Home/News";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <StandForSection />
       <WhatWeDo />
       <JoinSection />
+      <NewsComponent/>
       <EventComponent />
       <ImpactComponent />
       <OurTeam />
