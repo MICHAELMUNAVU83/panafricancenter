@@ -44,13 +44,13 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white shadow-md">
       <div className="max-w-[80%] mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <img
             src="/Center for Pan African Affairs. Logo.jpeg"
             alt="CPAA Logo"
-            className="w-20 h-auto object-cover"
+            className="w-40 h-auto object-cover"
           />
 
           <ul className="hidden md:flex space-x-8">
@@ -71,7 +71,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 10 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute top-10 left-0 bg-white shadow-lg rounded-xl w-[450px] z-20"
+                    className="absolute top-8 left-0 bg-white shadow-lg rounded-xl w-[450px] z-20"
                   >
                     <ul className="grid grid-cols-2 gap-4 p-8 border border-gray-200 rounded-md">
                       {item.children.map((child, childIndex) => (

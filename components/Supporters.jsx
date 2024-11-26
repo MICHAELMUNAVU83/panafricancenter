@@ -9,14 +9,9 @@ import "swiper/css/autoplay";
 
 import { Autoplay, Pagination } from "swiper/modules";
 const Supporters = () => {
-  const slides = [
-    "/assets/1.png",
-    "/assets/2.png",
-    "/assets/3.png",
-    "/assets/4.png",
-  ];
+  const slides = ["/logo1.jpg", "/logo2.jpg", "/logo3.jpg"];
   return (
-    <div className="mt-10  md:max-w-[80%] max-w-[90%] m-auto flex flex-col justify-center items-center w-full mx-auto gap-5">
+    <div className="mt-10  w-full md:max-w-[80%] max-w-[90%] m-auto flex flex-col justify-center items-center w-full mx-auto gap-5">
       <h1 className="text-[#525560] uppercase text-center libre-baskerville-regular text-[22px] ">
         Our Partners
       </h1>

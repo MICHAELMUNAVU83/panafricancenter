@@ -19,7 +19,7 @@ export default function NewsComponent() {
 
   return (
     <section className="w-full lg:h-auto">
-      <div className="w-full max-w-[90%] lg:max-w-[80%] mx-auto relative">
+      <div className="w-full max-w-[90%] lg:max-w-[80%] mx-auto relative shadow-lg">
         <motion.div
           className="relative w-full h-full overflow-hidden"
           initial={{ opacity: 0 }}
@@ -60,7 +60,7 @@ export default function NewsComponent() {
         </div>
       </div>
 
-      <div className="mt-8 mx-auto w-full max-w-[90%] sm:max-w-[80%]">
+      <div className="mt-8 mx-auto w-full max-w-[90%] md:max-w-[80%]">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -73,14 +73,14 @@ export default function NewsComponent() {
           <p className="mt-4 text-lg text-center text-gray-700">
             {NewsData[currentIndex].desc}
           </p>
-          <ul className="mt-6 space-y-2">
+          <ul className="mt-6 space-y-2 text-center">
             {NewsData[currentIndex].list.map((item, index) => (
               <motion.li
                 key={index}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.3 }}
-                className="text-sm sm:text-lg text-gray-600"
+                className="text-sm md:text-lg text-gray-600 font-semibold"
               >
                 {item}
               </motion.li>

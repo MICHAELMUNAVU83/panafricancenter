@@ -9,7 +9,7 @@ export default function ImpactTile({
 }) {
   return (
     <div>
-      <div className="flex flex-col mb-8">
+      <div className="flex flex-col mb-8 ">
         <h1 className="text-[20px] md:text-[30px] lg:text-[48px] ">
           {title[0]}
         </h1>
@@ -32,9 +32,9 @@ export default function ImpactTile({
           {list2.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col items-center text-center p-4 border rounded-lg shadow-sm hover:shadow-md shadow-red-100"
+              className="bg-white flex flex-col items-center text-center p-4 border rounded-lg shadow-sm hover:shadow-md shadow-red-100"
             >
-              <div className="w-full h-48 mb-4">
+              <div className="w-full h-48 mb-4 ">
                 <Image
                   src={item.img}
                   alt={item.title}
@@ -53,12 +53,11 @@ export default function ImpactTile({
       </div>
 
       <div className="mt-8 text-center">
-        <Link href={'/programs'}>
-        <button className="bg-black text-white px-6 py-2 lg:px-8 lg:py-4 rounded-lg hover:bg-red-600">
-          {btn}
-        </button>
+        <Link href={"/programs"}>
+          <button className="bg-black text-white px-6 py-2 lg:px-8 lg:py-4 rounded-lg hover:bg-red-600">
+            {btn}
+          </button>
         </Link>
-       
       </div>
     </div>
   );
