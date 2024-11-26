@@ -9,10 +9,17 @@ import "swiper/css/autoplay";
 
 import { Autoplay, Pagination } from "swiper/modules";
 const Supporters = () => {
-  const slides = ["/logo1.jpg", "/logo2.jpg", "/logo3.jpg"];
+  const slides = [
+    "/logo1.jpg",
+    "/logo2.jpg",
+    "/logo3.jpg",
+    "/logo1.jpg",
+    "/logo2.jpg",
+    "/logo3.jpg",
+  ];
   return (
-    <div className="mt-10  w-full md:max-w-[80%] max-w-[90%] m-auto flex flex-col justify-center items-center w-full mx-auto gap-5">
-      <h1 className="text-[#525560] uppercase text-center libre-baskerville-regular text-[22px] ">
+    <div className="mt-10  flex flex-col justify-center items-center w-full mx-auto gap-5">
+      <h1 className="text-[#525560] uppercase text-center libre-baskerville-regular text-[22px] md:text-[30px] lg:text-[48px] ">
         Our Partners
       </h1>
 
@@ -35,9 +42,9 @@ const Supporters = () => {
           },
         }}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 6000 }}
+        autoplay={{ delay: 3000 }}
         loop={true}
-        className="w-[100%] cursor-pointer flex justify-center items-center  "
+        className="w-full max-w-[80%] mx-auto cursor-pointer flex flex-row justify-center items-center  "
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>

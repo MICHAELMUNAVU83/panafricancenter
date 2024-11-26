@@ -33,13 +33,14 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/CPAA_LOGO.png" sizes="any" />
       </head>
+
       <body
         className={`${(dmSans.className, poppins.className, roboto.className)}`}
       >
-        <Navbar />
+          <Navbar />
         {children}
         <ScrollToTop />
-        <Footer />
+          <Footer />
       </body>
     </html>
   );
