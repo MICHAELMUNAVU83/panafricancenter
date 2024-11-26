@@ -11,16 +11,19 @@ export default function EventTile({
   imgRef,
 }) {
   return (
-    <div className="bg-orange-200 rounded-3xl p-4">
-      <div className="relative w-full ">
-        <span className="absolute z-10 text-white">{headerTag}</span>
-        <div className="relative flex -tems-center justify-center">
+    <div className="bg-cyan-300 rounded-3xl p-4">
+      <div className="relative w-full h-auto ">
+        <div className="inset-0 bg-black/20 absolute rounded-2xl z-10"></div>
+        <span className="relative z-20 p-12 text-white text-lg font-bold">
+          {headerTag}
+        </span>
+        <div className="relative flex items-center justify-center">
           <Image
             src={imgRef}
             width={500}
             height={500}
             alt={title}
-            className="w-full lg:h-auto lg:bg-fixed lg:bg-cover lg:bg-center"
+            className="w-full  rounded-2xl lg:h-auto lg:bg-fixed lg:bg-cover lg:bg-center"
           />
         </div>
       </div>

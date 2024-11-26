@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { motion } from "framer-motion";
 import { ImpactData } from "@/app/shared/Data";
 import ImpactTile from "./ImpactTile";
