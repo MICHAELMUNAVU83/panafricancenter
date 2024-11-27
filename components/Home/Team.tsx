@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { teamData } from "@/app/shared/Data";
 import TeamTile from "./TeamTile";
 
 export default function OurTeam() {
   return (
-    <section className="w-full h-auto py-8">
+    <section className="w-full h-auto py-8 my-10 lg:my-20">
       <div className="w-full max-w-[90%] mx-auto lg:max-w-[80%]">
         <div className="text-start mb-8">
           {teamData.map((data, index) => (
@@ -21,10 +21,10 @@ export default function OurTeam() {
               }}
               viewport={{ once: true }}
             >
-              <h1 className="text-[20px] md:text-[30px] lg:text-[48px] font-bold">
+              <h1 className="text-[20px] md:text-[30px] lg:text-[40px] font-bold">
                 {data.title[0]}
               </h1>
-              <div className="text-[16px] md:text-[20px] lg:text-[24px] mt-4">
+              <div className="text-[14px] md:text-[18px] lg:text-[22px] mt-4">
                 {data.desc.map((desc, idx) => (
                   <motion.p
                     key={idx}
@@ -42,7 +42,7 @@ export default function OurTeam() {
                   </motion.p>
                 ))}
               </div>
-              <h2 className="text-[20px] md:text-[30px] lg:text-[48px] font-semibold mt-8">
+              <h2 className="text-[20px] md:text-[30px] lg:text-[40px] font-semibold mt-8">
                 {data.title[1]}
               </h2>
             </motion.div>

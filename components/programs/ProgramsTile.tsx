@@ -1,4 +1,14 @@
-export default function ProgramTile({ imgRef, title, desc }) {
+type ProgramTileProps = {
+  imgRef?: string;
+  title: string[];
+  desc: {
+    img?: string;
+    title: string;
+    desc: string;
+  }[];
+};
+
+export default function ProgramTile({ imgRef, title, desc }: ProgramTileProps) {
   return (
     <div className="p-4 flex flex-col lg:flex-row lg:p-8 lg:space-x-8 h-full">
       <div className="w-full">
@@ -12,11 +22,10 @@ export default function ProgramTile({ imgRef, title, desc }) {
       </div>
 
       <div className="flex flex-col w-full space-y-4">
-        <h2 className="text-[20px] md:text-[30px] lg:text-[48px] font-bold text-gray-800">
-          {title[0]}
+        <h2 className="text-[20px] md:text-[30px] lg:text-[36px] text-center font-bold text-gray-800">
+          {title[0]} {/* Assuming you want the first title */}
         </h2>
-        <div className="w-full h-96 overflow-y-scroll ">
-          {" "}
+        <div className="w-full h-96 overflow-y-scroll">
           {desc.map((item, idx) => (
             <div
               key={idx}

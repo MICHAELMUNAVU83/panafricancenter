@@ -4,13 +4,13 @@ export default function HeroTile({ about, tiles }) {
       <div className=" mb-12">
         <div className="flex flex-col md:flex-row items-center justify-center">
           <div className="w-full">
-            <h1 className="text-[24px] md:text-[36px] lg:text-[48px] font-bold mb-4">
+            <h1 className="text-[20px] md:text-[30px] lg:text-[36px] font-bold mb-4">
               {about.title}
             </h1>
             {about.desc.map((paragraph, index) => (
               <p
                 key={index}
-                className="text-[16px] md:text-[20px] lg:text-[24px] leading-relaxed mb-4"
+                className="text-[14px] md:text-[18px] lg:text-[22px] leading-relaxed mb-4"
               >
                 {paragraph}
               </p>
@@ -37,13 +37,13 @@ export default function HeroTile({ about, tiles }) {
                   className="w-20 h-20"
                 />
               </div>
-              <h2 className="text-center text-[20px] md:text-[24px] lg:text-[28px] font-semibold mb-4">
+              <h2 className="text-center text-[18px] md:text-[22px] lg:text-[26px] font-semibold mb-4">
                 {tile.tileTitle}
               </h2>
               {tile.tileDesc.map((desc, index) => (
                 <p
                   key={index}
-                  className="text-[16px] md:text-[20px]  leading-relaxed text-center"
+                  className="text-[14px] md:text-[18px]  leading-relaxed text-center"
                 >
                   {desc}
                 </p>
@@ -53,7 +53,7 @@ export default function HeroTile({ about, tiles }) {
       </div>
 
       <div>
-        <h2 className="text-center text-[24px] md:text-[30px] lg:text-[36px] font-bold mb-8">
+        <h2 className="text-center text-[22px] md:text-[26px] lg:text-[30px] font-bold mb-8">
           {tiles.find((tile) => tile.id === 3)?.tileTitle}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -71,10 +71,10 @@ export default function HeroTile({ about, tiles }) {
                     className="object-cover w-full h-full rounded-full"
                   />
                 </div>
-                <h3 className="text-[16px] md:text-[18px] lg:text-[20px] font-bold">
+                <h3 className="text-[14px] md:text-[16px] lg:text-[18px] font-bold">
                   {value.title}
                 </h3>
-                <p className="text-[14px] md:text-[16px] leading-relaxed">
+                <p className="text-[12px] md:text-[14px] leading-relaxed">
                   {value.desc}
                 </p>
               </div>

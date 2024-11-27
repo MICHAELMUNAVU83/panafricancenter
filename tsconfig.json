@@ -22,7 +22,7 @@
     }
   },
 
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/about/page.tsx", "components/About.tsx", "components/AboutCards.tsx", "components/EventComponent.tsx", "components/OurWork.jsx", "components/Awards.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/about/page.tsx", "components/About.tsx", "components/AboutCards.tsx", "components/EventComponent.jsx", "components/OurWork.jsx", "components/Awards.jsx", "components/About/HeroTile.jsx", "components/About/WorkTile.jsx", "components/Home/EventTile.jsx", "components/Home/Impact.jsx", "components/Home/ImpactTile.jsx", "components/Home/JoinTile.jsx", "components/Home/TeamTile.jsx", "components/Home/Tile.jsx", "components/Navbar.jsx"],
 
   "exclude": ["node_modules"]
 }

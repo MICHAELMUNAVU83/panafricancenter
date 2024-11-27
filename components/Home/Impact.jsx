@@ -5,8 +5,8 @@ import ImpactTile from "./ImpactTile";
 
 export default function ImpactComponent() {
   return (
-    <section className="w-full h-auto lg:h-screen bg-orange-200">
-      <div className="max-w-[90%] lg:max-w-[80%] mx-auto w-full">
+    <section className="w-full h-auto lg:h-auto my-10  lg:my-20 bg-orange-200">
+      <div className="max-w-[90%] lg:max-w-[80%] mx-auto w-full ">
         <div>
           {ImpactData.map((data, index) => (
             <motion.div

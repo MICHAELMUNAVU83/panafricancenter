@@ -21,23 +21,23 @@ export default function TileComponent({
             </span>
           </div>
           <div className="flex flex-col  lg:items-start lg:justify-start space-y-4">
-            <h1 className="text-[24px] md:text-[34px] lg:text-[48px]">
+            <h1 className="text-[20px] md:text-[30px] lg:text-[40px]">
               {title}
             </h1>
-            <p className="text-[16px] md:text-[20px] lg:text-[24px]">
+            <p className="text-[14px] md:text-[18px] lg:text-[22px]">
               {desc[0]}
             </p>
             <ul className=" bg-gray-100 p-2 rounded-3xl shadow-md">
               {list.map((list, idx) => (
                 <li
                   key={idx}
-                  className="text-[16px] md:text-[20px] lg:text-[24px] font-medium  px-2"
+                  className="text-[14px] md:text-[18px] lg:text-[22px] font-medium  px-2"
                 >
                   {list}
                 </li>
               ))}
             </ul>
-            <p className="text-[16px] md:text-[20px] lg:text-[24px]">
+            <p className="text-[14px] md:text-[18px] lg:text-[22px]">
               {desc[1]}
             </p>
             <Link href={"/about"}>
@@ -84,25 +84,25 @@ export const TileComponent2 = ({
         <div className="flex flex-col w-full space-y-4 mt-4">
           <div className="flex flex-row space-x-4 w-auto items-center">
             <span className="border-b-4 border-red-600 w-8 h-2 flex "></span>
-            <span className="text-red-600 text-[16px] md:text-[18px] lg:text-[20px] font-bold">
+            <span className="text-red-600 text-[14px] md:text-[16px] lg:text-[18px] font-bold">
               {headerTile}
             </span>
           </div>
           <div className="flex flex-col space-y-4">
-            <h1 className="text-[24px] md:text-[34px] lg:text-[48px]">
+            <h1 className="text-[20px] md:text-[30px] lg:text-[40px]">
               {title}
             </h1>
-            <p className="text-[16px] md:text-[20px] lg:text-[24px]">
+            <p className="text-[14px] md:text-[18px] lg:text-[22px]">
               {desc[0]}
             </p>
-            <p className="text-[16px] md:text-[20px] lg:text-[24px]">
+            <p className="text-[14px] md:text-[18px] lg:text-[22px]">
               {desc[1]}
             </p>
             <ul className="bg-gray-100 p-2 md:p-4 shadow-md rounded-3xl w-full">
               {list.map((list, idx) => (
                 <li
                   key={idx}
-                  className="text-[16px] md:text-[20px] lg:text-[24px] font-medium "
+                  className="text-[14px] md:text-[18px] lg:text-[22px] font-medium "
                 >
                   {list}
                 </li>

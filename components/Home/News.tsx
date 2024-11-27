@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { NewsData } from "@/app/shared/Data";
 
+
 export default function NewsComponent() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -36,13 +37,13 @@ export default function NewsComponent() {
         <div className="absolute top-1/2 left-4 right-4 flex justify-between px-4">
           <button
             onClick={prevSlide}
-            className="bg-black text-white p-2 rounded-full opacity-50 hover:opacity-100"
+            className="bg-black text-white p-4 rounded-full opacity-50 hover:opacity-100"
           >
             &#8592;
           </button>
           <button
             onClick={nextSlide}
-            className="bg-black text-white p-2 rounded-full opacity-50 hover:opacity-100"
+            className="bg-black text-white p-4 rounded-full opacity-50 hover:opacity-100"
           >
             &#8594;
           </button>

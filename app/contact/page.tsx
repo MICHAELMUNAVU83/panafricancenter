@@ -36,12 +36,12 @@ const Contact = () => {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
-            <h1 className="text-red-600 text-[24px] md:text-[30px] lg:text-[44px] font-bold">
+            <h1 className="text-red-600 text-[24px] md:text-[30px] lg:text-[40px] font-bold">
               We'd love to hear from you!
             </h1>
             <div className="flex flex-col space-y-4 mt-4">
               <p
-                className="text-green-600 text-[16px] md:text-[20px] lg:text-[24px] font-semibold cursor-pointer"
+                className="text-green-600 text-[14px] md:text-[18px] lg:text-[22px] font-semibold cursor-pointer"
                 onClick={() =>
                   openLink(
                     "https://www.google.com/maps?q=Wana+Ndege+Flats,+Kirichwa+Lane"
@@ -61,7 +61,7 @@ const Contact = () => {
               </p>
 
               <p
-                className="text-[16px] md:text-[20px] lg:text-[24px] font-semibold cursor-pointer"
+                className="text-[14px] md:text-[18px] lg:text-[22px] font-semibold cursor-pointer"
                 onClick={() => callPhone("+254733374727")}
               >
                 <FaPhoneAlt className="inline-block mr-2" />
@@ -70,7 +70,7 @@ const Contact = () => {
             </div>
 
             <div className="mt-4">
-              <h2 className="text-[16px] md:text-[24px] lg:text-[30px] font-bold">
+              <h2 className="text-[14px] md:text-[22px] lg:text-[28px] font-bold">
                 Follow us on Social Media
               </h2>
               <ul className="flex space-x-4 mt-2">

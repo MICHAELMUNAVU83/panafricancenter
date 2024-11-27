@@ -10,22 +10,22 @@ export default function ImpactTile({
   return (
     <div>
       <div className="flex flex-col mb-8 ">
-        <h1 className="text-[20px] md:text-[30px] lg:text-[48px] ">
+        <h1 className="text-[18px] md:text-[28px] lg:text-[40px] ">
           {title[0]}
         </h1>
-        <p className="text-[16px] md:text-[20px] lg:text-[24px] mt-4">{desc}</p>
+        <p className="text-[14px] md:text-[18px] lg:text-[22px] mt-4">{desc}</p>
       </div>
 
       <div className="mb-8">
         {list.map((item, index) => (
-          <p key={index} className="text-[16px] md:text-[20px] lg:text-[24px]">
+          <p key={index} className="text-[14px] md:text-[18px] lg:text-[22px]">
             {item}
           </p>
         ))}
       </div>
 
       <div>
-        <h2 className="text-[20px] md:text-[24px] lg:text-[32px] mb-4">
+        <h2 className="text-[18px] md:text-[20px] lg:text-[28px] mb-4">
           {title[1]}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -43,7 +43,7 @@ export default function ImpactTile({
                   className="object-contain bg-center  h-full w-full"
                 />
               </div>
-              <h3 className="text-[20px] md:text-[24px] lg:text-[28px] mb-2 text-red-600">
+              <h3 className="text-[18px] md:text-[22px] lg:text-[26px] mb-2 text-red-600">
                 {item.title}
               </h3>
               <p className="text-[14px] md:text-[18px]">{item.desc}</p>

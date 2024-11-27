@@ -3,7 +3,7 @@ export const IntroData = [
     id: 1,
     headerTag: `CPAA Envision`,
     title: `What We Stand For`,
-    imgRef: `/assets/hero/envision.jpg`,
+    imgRef: `/meeting.jpg`,
     desc: [
       `At CPAA, we envision:`,
       `We work tirelessly to connect communities, amplify African voices, and build solutions to the continent’s challenges through partnerships and people-centered approaches.`,
@@ -22,7 +22,7 @@ export const VisionData = [
     id: 1,
     headerTag: `Mission & Vision`,
     title: `What We Do`,
-    imgRef: `/assets/hero/wed0.jpg`,
+    imgRef: `/download.jpg`,
     desc: [
       `Empower | Advocate | Transform`,
       `CPAA champions the Pan-African vision through:`,
@@ -283,7 +283,7 @@ export const ProgramData = [
   },
   {
     id: 2,
-    imgRef: `/assets/hero/advocacy.jpg`,
+    imgRef: `/advocacy1.jpg`,
     title: ["Advocacy"],
     desc: [
       {

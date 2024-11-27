@@ -7,13 +7,13 @@ export default function JoinTile({ headerTag, title, desc, btn, imgRef }) {
       <div className="w-full flex flex-col justify-center">
         <div className="flex flex-row items-center w-auto space-x-4">
           <span className="border-b-4 border-red-600 w-8 h-2 flex "></span>
-          <span className="text-red-600 text-[16px] md:text-[18px] lg:text-[20px] font-bold">
+          <span className="text-red-600 text-[14px] md:text-[16px] lg:text-[18px] font-bold">
             {headerTag}
           </span>
         </div>
         <div className="flex flex-col space-y-8">
-          <h1 className="text-[24px] md:text-[34px] lg:text-[48px]">{title}</h1>
-          <p className="text-[16px] md:text-[20px] lg:text-[24px]">{desc}</p>
+          <h1 className="text-[20px] md:text-[30px] lg:text-[40px]">{title}</h1>
+          <p className="text-[14px] md:text-[18px] lg:text-[22px]">{desc}</p>
           <Link href={'/programs'}>
           <button className="px-8 py-4 border-2 border-red-600">{btn}</button>
 

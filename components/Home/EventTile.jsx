@@ -29,13 +29,13 @@ export default function EventTile({
       </div>
       <div>
         <div className="">
-          <h1 className="text-[16px] md:text-[20px] lg:text-[24px]">{title}</h1>
-          <h2 className="text-[20px] md:text-[24px] lg:text-[32px]">
+          <h1 className="text-[14px] md:text-[18px] lg:text-[22px]">{title}</h1>
+          <h2 className="text-[18px] md:text-[22px] lg:text-[28px]">
             {subTitle}
           </h2>
         </div>
         <div className="px-4 py-2">
-          <p className="text-[16px] md:text-[20px] lg:text-[24px]">{desc}</p>
+          <p className="text-[14px] md:text-[18px] lg:text-[22px]">{desc}</p>
         </div>
         <div className="flex flex-col bg-red-600  p-4 rounded-3xl space-y-4">
           <span className="text-lg text-bold text-white">Date{date}</span>

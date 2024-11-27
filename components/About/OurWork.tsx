@@ -3,15 +3,15 @@ import WorkTile from "./WorkTile";
 
 export default function OurWork() {
   return (
-    <section className="w-full h-auto lg:h-screen">
+    <section className="w-full h-auto lg:h-auto my-10 lg:my-20">
       <div className="w-full max-w-[90%] space-y-6  mx-auto lg:max-w-[80%] h-full items-center justify-center flex flex-col lg:space-y-8 ">
         <div className="w-full ">
           {WorkData.map((data) => (
             <>
-              <h1 className="text-[24px] md:text-[30px] lg:text-[48px]">
+              <h1 className="text-[24px] md:text-[30px] lg:text-[36px]">
                 {data.title}
               </h1>
-              <p className="text-[16px] md:text-[20px] lg:text-[24px]">
+              <p className="text-[14px] md:text-[18px] lg:text-[22px]">
                 {data.desc}
               </p>
             </>

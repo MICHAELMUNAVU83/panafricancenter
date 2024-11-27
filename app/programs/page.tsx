@@ -16,12 +16,14 @@ export default function Programs() {
 
   const [status, setStatus] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+  ) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("Sending...");
 
@@ -78,12 +80,13 @@ export default function Programs() {
           transition={{ duration: 0.8, ease: "easeInOut" }}
           viewport={{ once: true }}
         >
-          <h1 className="text-[24px] md:text-[30px] lg:text-[48px]">
+          <h1 className="text-[24px] md:text-[30px] lg:text-[36px] text-center">
             Become a member today
           </h1>
         </motion.div>
+
         <motion.div
-          className="w-full flex justify-center items-center min-h-auto lg:bg-gray-100"
+          className="w-full flex justify-center items-center lg:bg-orange-100 p-8"
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
@@ -91,7 +94,7 @@ export default function Programs() {
         >
           <form
             onSubmit={handleSubmit}
-            className="w-full  lg:max-w-3xl md:max-w-2xl max-w-xl bg-white shadow-md rounded-lg p-8 space-y-6"
+            className="w-full lg:max-w-3xl md:max-w-2xl max-w-xl bg-white shadow-md rounded-lg p-8 space-y-6"
           >
             <h2 className="text-2xl font-bold text-gray-800 text-center">
               Contact Us

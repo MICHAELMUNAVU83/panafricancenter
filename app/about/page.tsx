@@ -20,7 +20,7 @@ export default function About() {
           </motion.div>
         </div>
 
-        <div>
+        <div className= "my-10 lg:my-20">
           <motion.div
             initial={{ opacity: 0, y: -50 }} 
             whileInView={{ opacity: 1, y: 0 }} 
