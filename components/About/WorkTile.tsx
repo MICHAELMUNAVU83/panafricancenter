@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function WorkTile({ headerTag, title, bgImg, desc, action }) {
   return (
     <div
-      className="relative rounded-3xl shadow-sm hover:shadow-lg bg-cover bg-no-repeat bg-center  p-8"
+      className="relative rounded-3xl shadow-sm hover:shadow-lg object-cover bg-no-repeat bg-center  p-8"
       style={{ backgroundImage: `url('${bgImg}')` }}
     >
       <div className="inset-0 bg-black/50 absolute rounded-3xl"></div>

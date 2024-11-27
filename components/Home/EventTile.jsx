@@ -23,7 +23,7 @@ export default function EventTile({
             width={500}
             height={500}
             alt={title}
-            className="w-full  rounded-2xl lg:h-auto lg:bg-fixed lg:bg-cover lg:bg-center"
+            className="w-full  rounded-2xl lg:h-auto lg:bg-fixed lg:object-cover lg:bg-center"
           />
         </div>
       </div>

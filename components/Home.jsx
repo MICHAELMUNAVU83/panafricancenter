@@ -9,7 +9,6 @@ import "swiper/css/autoplay";
 
 import sliderBG from "@/public/assets/slider-background.svg";
 
-
 import { Autoplay, Pagination } from "swiper/modules";
 
 const HomeDesc = () => {
@@ -45,7 +44,7 @@ const HomeDesc = () => {
           {slidesData.map((slide, index) => (
             <SwiperSlide key={index}>
               <div
-                className="flex text-white flex-col justify-center items-center gap-4  bg-cover w-[100%] h-[100%] text-center"
+                className="flex text-white flex-col justify-center items-center gap-4  object-cover w-[100%] h-[100%] text-center"
                 style={{ backgroundImage: `url(${slide.image})` }}
               >
                 <p className="libre-baskerville-bold w-[80%] md:w-[50%] text-[32px] md:text-[40px]">

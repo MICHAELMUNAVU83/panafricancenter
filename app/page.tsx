@@ -18,8 +18,8 @@ export default function Home() {
       <StandForSection />
       <WhatWeDo />
       <JoinSection />
-      <NewsComponent/>
-      <EventComponent />
+      <NewsComponent />
+
       <ImpactComponent />
       <OurTeam />
       <Statistics />

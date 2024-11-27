@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { EventData } from "@/app/shared/Data";
-import EventTile from "./Home/EventTile";
+import EventTile from "./Home/EventTile.jsx";
 
 export default function EventComponent() {
   const sortedEvents = [...EventData].sort(

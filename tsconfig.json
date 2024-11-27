@@ -22,7 +22,7 @@
     }
   },
 
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/about/page.tsx", "components/About.tsx", "components/AboutCards.tsx", "components/EventComponent.tsx", "components/OurWork.jsx", "components/Awards.jsx", "app/programs/page.jsx", "components/programs/ProgramsTile.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/about/page.tsx", "components/About.tsx", "components/AboutCards.tsx", "components/EventComponent.jsx", "components/OurWork.jsx", "components/Awards.jsx", "app/programs/page.jsx", "components/programs/ProgramsTile.jsx", "components/Home/EventTile.jsx", "components/Home/Impact.jsx", "components/Home/ImpactTile.jsx", "components/Home/Join.jsx", "components/Home/JoinTile.jsx", "components/Home/News.jsx", "components/Home/ScrollToTop.jsx", "components/Home/StandForSection.jsx", "components/Home/Team.jsx", "components/Home/TeamTile.jsx", "components/Home/Tile.jsx", "components/Home/WhatWeDo.jsx", "components/Navbar.jsx", "components/Home.jsx", "components/GetInvolvedTile.tsx", "components/GetInvolved.jsx", "components/Gallery.jsx", "components/Footer.jsx", "components/Contact.jsx", "components/Statistics.jsx"],
 
   "exclude": ["node_modules"]
 }

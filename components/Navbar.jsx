@@ -46,11 +46,11 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md">
       <div className="max-w-[80%] mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center">
           <img
             src="/Center for Pan African Affairs. Logo.jpeg"
             alt="CPAA Logo"
-            className="w-40 h-auto object-cover"
+            className="w-24 object-cover"
           />
 
           <ul className="hidden md:flex space-x-8">

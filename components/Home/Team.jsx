@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { teamData } from "@/app/shared/Data";
-import TeamTile from "./TeamTile";
+import TeamTile from "./TeamTile.jsx";
 
 export default function OurTeam() {
   return (

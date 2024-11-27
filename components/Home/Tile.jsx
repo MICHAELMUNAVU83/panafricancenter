@@ -52,7 +52,7 @@ export default function TileComponent({
             src={imgRef}
             width={500}
             height={500}
-            className="bg-cover bg-center lg:w-full md:w-full lg:h-full"
+            className="object-cover object-cover bg-center lg:w-full md:w-full lg:h-full"
             alt={title}
           />
         </div>
@@ -77,7 +77,7 @@ export const TileComponent2 = ({
             src={imgRef}
             width={500}
             height={500}
-            className="bg-cover bg-center md:w-full lg:w-full lg:h-full"
+            className="object-cover object-cover bg-center md:w-full lg:w-full lg:h-full"
             alt={title}
           />
         </div>
@@ -109,7 +109,7 @@ export const TileComponent2 = ({
               ))}
             </ul>
           </div>
-          <Link href={"/programs" }>
+          <Link href={"/programs"}>
             <button className="px-4 py-2 md:w-full lg:px-8 lg:py-4 mt-10 bg-red-600 text-yellow-500 text-base lg:text-lg">
               {btn}
             </button>
