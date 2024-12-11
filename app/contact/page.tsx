@@ -118,6 +118,7 @@ const Contact = () => {
             transition={{ duration: 0.8, ease: "easeInOut" }}
             viewport={{ once: true }}
           >
+            
             <form
               action="https://formspree.io/f/xvgplpky"
               method="post"

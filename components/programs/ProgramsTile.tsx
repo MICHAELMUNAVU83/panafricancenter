@@ -23,7 +23,7 @@ export default function ProgramTile({ imgRef, title, desc }: ProgramTileProps) {
 
       <div className="flex flex-col w-full space-y-4">
         <h2 className="text-[20px] md:text-[30px] lg:text-[36px] text-center font-bold text-gray-800">
-          {title[0]} {/* Assuming you want the first title */}
+          {title[0]} 
         </h2>
         <div className="w-full h-96 overflow-y-scroll">
           {desc.map((item, idx) => (

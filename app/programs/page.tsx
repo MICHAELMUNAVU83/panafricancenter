@@ -6,54 +6,6 @@ import { ProgramData } from "../shared/Data";
 import ProgramsTile from "../../components/programs/ProgramsTile";
 
 export default function Programs() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    location: "",
-    category: "",
-    message: "",
-  });
-
-  const [status, setStatus] = useState("");
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
-  ) => {
-    const { id, value } = e.target;
-    setFormData((prev) => ({ ...prev, [id]: value }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("Sending...");
-
-    try {
-      const response = await fetch("https://cpaa.africa/form_handler.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: new URLSearchParams(formData).toString(),
-      });
-
-      const result = await response.json();
-      if (result.success) {
-        setStatus("Message sent successfully!");
-        setFormData({
-          name: "",
-          email: "",
-          location: "",
-          category: "",
-          message: "",
-        });
-      } else {
-        setStatus(result.message);
-      }
-    } catch (error) {
-      setStatus("An error occurred. Please try again later.");
-    }
-  };
-
   return (
     <section className="w-full h-auto">
       <div className="w-full max-w-[90%] lg:max-w-[80%] mx-auto">
@@ -93,7 +45,8 @@ export default function Programs() {
           viewport={{ once: true }}
         >
           <form
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/xvgplpky"
+            method="post"
             className="w-full lg:max-w-3xl md:max-w-2xl max-w-xl bg-white shadow-md rounded-lg p-8 space-y-6"
           >
             <h2 className="text-2xl font-bold text-gray-800 text-center">
@@ -107,11 +60,10 @@ export default function Programs() {
               <input
                 type="text"
                 id="name"
-                value={formData.name}
-                onChange={handleChange}
                 placeholder="Your Name"
                 className="mt-2 w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
                 required
+                name="Name"
               />
             </div>
 
@@ -124,9 +76,7 @@ export default function Programs() {
               </label>
               <input
                 type="email"
-                id="email"
-                value={formData.email}
-                onChange={handleChange}
+                name="Email"
                 placeholder="Your Email"
                 className="mt-2 w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
                 required
@@ -143,10 +93,9 @@ export default function Programs() {
               <input
                 type="text"
                 id="location"
-                value={formData.location}
-                onChange={handleChange}
                 placeholder="Your Location"
                 className="mt-2 w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
+                name="Location"
                 required
               />
             </div>
@@ -160,10 +109,9 @@ export default function Programs() {
               </label>
               <select
                 id="category"
-                value={formData.category}
-                onChange={handleChange}
                 className="mt-2 w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
                 required
+                name="Category"
               >
                 <option value="" disabled>
                   Select a Category
@@ -184,9 +132,8 @@ export default function Programs() {
               <textarea
                 id="message"
                 rows={5}
-                value={formData.message}
-                onChange={handleChange}
                 placeholder="Write your message here..."
+                name="Message"
                 className="mt-2 w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
                 required
               ></textarea>
@@ -200,8 +147,6 @@ export default function Programs() {
                 Submit
               </button>
             </div>
-
-            <p className="text-center mt-4 text-green-600">{status}</p>
           </form>
         </motion.div>
       </div>
